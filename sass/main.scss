@@ -13,3 +13,28 @@
 @import "./utils/Mixins";
 @import "./utils/Placeholders";
 
+
+
+
+
+
+img {
+    height: 300px;
+    width: 300px;
+}
+
+article {
+    border: 2px solid black;
+    background-color: sandybrown;
+}
+
+nav {
+    background-color: aquamarine;
+}
+header {
+    background-color: firebrick;
+}
+
+footer {
+    background-color: palegreen;
+}
