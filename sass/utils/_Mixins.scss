@@ -1,0 +1,27 @@
+/* Polices */
+
+@mixin Text-xl {
+    font-size: 30px;
+    color: black;
+    font-family: Roboto, 'comic sans ms', sans-serif;
+    font-weight: 600;
+}
+
+@mixin Text-l {
+    font-size: 25px;
+    color: black;
+    font-family: Roboto, 'comic sans ms', sans-serif;
+}
+
+@mixin Text-m {
+    font-size: 20px;
+    color: black;
+    font-family: Roboto, 'comic sans ms', sans-serif;
+    font-weight: 300;
+}
+
+@mixin Text-s {
+    font-size: 15px;
+    color: black;
+    font-family: Roboto, 'comic sans ms', sans-serif;
+}

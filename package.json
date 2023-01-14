@@ -1,0 +1,21 @@
+{
+  "name": "p3_ohmyfood_regnault_domitille",
+  "version": "1.0.0",
+  "description": "Projet P3_Ohmyfood_Regnault_Domitille",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lepetitkiri/Ohmyfood_P3_Openclassrooms.git"
+  },
+  "author": "REGNAULT Domitille",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lepetitkiri/Ohmyfood_P3_Openclassrooms/issues"
+  },
+  "homepage": "https://github.com/Lepetitkiri/Ohmyfood_P3_Openclassrooms#readme",
+  "browserslist": "last 4 versions"
+}

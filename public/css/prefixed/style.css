@@ -1,0 +1,30 @@
+img {
+  height: 300px;
+  width: 300px;
+}
+
+article {
+  border: 2px solid black;
+  background-color: sandybrown;
+}
+
+nav {
+  background-color: aquamarine;
+}
+
+header {
+  background-color: firebrick;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: palegreen;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Nhc3MvbWFpbi5zY3NzIiwiLi4vc3R5bGUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQW9CQTtFQUNJLGFBQUE7RUFDQSxZQUFBO0FDbkJKOztBRHNCQTtFQUNJLHVCQUFBO0VBQ0EsNEJBQUE7QUNuQko7O0FEc0JBO0VBQ0ksNEJBQUE7QUNuQko7O0FEcUJBO0VBQ0ksMkJBQUE7QUNsQko7O0FEcUJBO0VBQ0ksb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSw0QkFBQTtFQUFBLDZCQUFBO01BQUEsMEJBQUE7VUFBQSxzQkFBQTtFQUNBLDJCQUFBO0FDbEJKIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
