@@ -1,5 +1,9 @@
 @import "./base/base.scss";
 @import "./base/typography.scss";
+@import "./utils/variables";
+@import "./utils/fonctions";
+@import "./utils/Mixins";
+@import "./utils/Placeholders";
 @import "./components/buttons.scss";
 @import "./layout/header.scss";
 @import "./layout/nav.scss";
@@ -8,10 +12,6 @@
 @import "./pages/about.scss";
 @import "./pages/project.scss";
 @import "./pages/work.scss";
-@import "./utils/variables";
-@import "./utils/fonctions";
-@import "./utils/Mixins";
-@import "./utils/Placeholders";
 
 
 
@@ -21,10 +21,16 @@
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    background-color: white;
+    background-color: $grey-light;
+    p {
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+    }
     &__logo {
         width: 200px;
-        height: 100%;
+        height: auto;
         padding-top: 20px;
         padding-bottom: 15px;
     }
@@ -34,16 +40,16 @@
         align-items: center;
         justify-content: center;
         flex-wrap: nowrap;
-        background-color: $grey-dark;
         padding-top: 18px;
         padding-bottom: 15px;
+        background-color: $grey-dark;
         & input {
             border: none;
-            background-color: $grey-dark;
             @include Text-m;
             font-weight: 500;
             padding-left: 20px;
             width: 50%;
+            background-color: $grey-dark;
         }
         form {
             display: flex;
@@ -55,22 +61,30 @@
         text-align: center;
         @include Text-xl;
         padding: 45px 80px 10px 80px;
-        background-color: $grey-light;
     }
     &__subtitle {
         text-align: center;
         @include Text-m;
-        background-color: $grey-light;
+        padding: 0px 40px 0px 40px;
     }
-    &__explore-button {
-        background-color: pink;
+}
+
+.home-nav {
+    background-color: white;
+    &__Title {
+        @include Text-xl;
+        padding: 60px 0px 30px 25px;
+    }
+    &__Buttons-part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 
-
-
 /** A supprimer a la fin **/
+
 
 img {
     height: 300px;
@@ -82,9 +96,6 @@ article {
     background-color: sandybrown;
 }
 
-nav {
-    background-color: aquamarine;
-}
 
 footer {
     background-color: palegreen;

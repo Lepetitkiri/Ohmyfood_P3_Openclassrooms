@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 .container {
   box-sizing: border-box;
-  max-width: 100%;
+  width: 100%;
 }
 
 a {
@@ -23,25 +23,71 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
 
 /* Police Roboto */
 /* Police Shrikhand */
-/** Boutons de la page d'accueil **/
-.home-explore-button {
-  width: 60%;
-  height: 100px;
+/* Les couleures */ /* Polices */ /** Boutons de la page d'accueil **/
+/* Page d'accueil */
+.home-header__explore-button {
+  margin: 40px 50px 65px 50px;
+  width: 58%;
+  height: 60px;
   display: flex;
   justify-content: center;
+  border: 1px solid #EAEAEA;
+  border-radius: 30px;
+  background: -webkit-linear-gradient(180deg, #ff79da, #9356dc); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(180deg, #ff79da, #9356dc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: 5px 5px 30px #EAEAEA;
+  font-size: 20px;
+  color: black;
+  font-family: Roboto, "comic sans ms", sans-serif;
+  font-weight: 300;
+  color: white;
 }
 
-/* Les couleures */ /* Polices */
+.home-nav__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  color: black;
+  font-family: Roboto, "comic sans ms", sans-serif;
+  font-weight: 300;
+  font-weight: 400;
+  width: 70%;
+  height: 90px;
+  background-color: #F7F7F7;
+  border-radius: 25px;
+  box-shadow: 5px 5px 30px #EAEAEA;
+  border: 1px solid #EAEAEA;
+  padding-right: 50px;
+  margin-bottom: 25px;
+}
+.home-nav__button-number {
+  background-color: #9356DC;
+  border-radius: 50%;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  margin-left: -15px;
+}
+.home-nav__button-icone {
+  color: grey;
+}
+
 .home-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+  background-color: #F7F7F7;
+}
+.home-header p {
+  width: 100%;
   background-color: white;
+  display: flex;
+  justify-content: center;
 }
 .home-header__logo {
   width: 200px;
-  height: 100%;
+  height: auto;
   padding-top: 20px;
   padding-bottom: 15px;
 }
@@ -51,13 +97,12 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
-  background-color: #EAEAEA;
   padding-top: 18px;
   padding-bottom: 15px;
+  background-color: #EAEAEA;
 }
 .home-header__search-bar input {
   border: none;
-  background-color: #EAEAEA;
   font-size: 20px;
   color: black;
   font-family: Roboto, "comic sans ms", sans-serif;
@@ -65,6 +110,7 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   padding-left: 20px;
   width: 50%;
+  background-color: #EAEAEA;
 }
 .home-header__search-bar form {
   display: flex;
@@ -78,7 +124,6 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   font-family: Roboto, "comic sans ms", sans-serif;
   font-weight: 600;
   padding: 45px 80px 10px 80px;
-  background-color: #F7F7F7;
 }
 .home-header__subtitle {
   text-align: center;
@@ -86,13 +131,25 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   color: black;
   font-family: Roboto, "comic sans ms", sans-serif;
   font-weight: 300;
-  background-color: #F7F7F7;
-}
-.home-header__explore-button {
-  background-color: pink;
+  padding: 0px 40px 0px 40px;
 }
 
-/* Dou vient ce margin ? */
+.home-nav {
+  background-color: white;
+}
+.home-nav__Title {
+  font-size: 30px;
+  color: black;
+  font-family: Roboto, "comic sans ms", sans-serif;
+  font-weight: 600;
+  padding: 60px 0px 30px 25px;
+}
+.home-nav__Buttons-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /** A supprimer a la fin **/
 img {
   height: 300px;
@@ -102,10 +159,6 @@ img {
 article {
   border: 2px solid black;
   background-color: sandybrown;
-}
-
-nav {
-  background-color: aquamarine;
 }
 
 footer {
