@@ -12,7 +12,7 @@
     border-radius: 30px;
     background: -webkit-linear-gradient(180deg, #ff79da,#9356dc);/* Chrome 10-25, Safari 5.1-6 */ 
     background: linear-gradient(180deg, #ff79da,#9356dc);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
-    box-shadow: 5px 5px 30px $grey-dark;  
+    @include Border-shadow;
     @include Text-m; 
     color: white;                                        
 }
@@ -27,7 +27,7 @@
     height: 90px;
     background-color: $grey-light;
     border-radius: 25px;
-    box-shadow: 5px 5px 30px $grey-dark; 
+    @include Border-shadow; 
     border: 1px solid $grey-dark;
     padding-right: 50px;
     margin-bottom: 25px;
@@ -40,6 +40,43 @@
     }
     &-icone {
         color: grey;
+    }
+}
+
+.restaurants-part-card {
+width: 95%;
+height: auto;
+border-radius: 25px 25px 25px 25px;
+@include Text-s;
+@include Border-shadow; 
+background-color: white;
+    &__img {
+        height: 210px;
+        border-radius: 25px 25px 0px 0px;
+        object-fit: cover;
+    }
+    &__new {
+        background-color: #99E2D0;
+        display: inline-block;
+        padding: 10px 20px 10px 20px;
+        color: #008766;
+        border-radius: 5px;
+        position: absolute;
+        right: 35px;
+        margin-top: 15px;
+    }
+    &__text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 12px 32px 20px 15px;
+        @include Text-m;
+    }
+    &__text h3 {
+        font-weight: 600;
+    }
+    &__text i {
+        padding-top: 20px;
     }
 }
 

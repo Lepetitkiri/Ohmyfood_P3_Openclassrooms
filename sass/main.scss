@@ -6,13 +6,12 @@
 @import "./utils/Placeholders";
 @import "./components/buttons.scss";
 @import "./layout/header.scss";
-@import "./layout/nav.scss";
+@import "./layout/footer.scss";
 @import "./layout/container.scss";
 @import "./layout/form.scss";
 @import "./pages/about.scss";
 @import "./pages/project.scss";
 @import "./pages/work.scss";
-
 
 
 
@@ -79,24 +78,22 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 60px;
     }
 }
 
-
-/** A supprimer a la fin **/
-
-
-img {
-    height: 300px;
-    width: 300px;
+.restaurants-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $grey-light;
+    height: auto;
+    padding: 60px 0px 80px 25px;
+    @include Text-l;
+    row-gap: 25px;
 }
 
-article {
-    border: 2px solid black;
-    background-color: sandybrown;
+.restaurants-part img {
+    width: 100%;
 }
 
-
-footer {
-    background-color: palegreen;
-}
