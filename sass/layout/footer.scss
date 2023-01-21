@@ -2,7 +2,7 @@ footer {
     background-color: #353535;
     padding-bottom: 50px;
     img {
-        padding: 31px 0px 20px 30px;
+        padding: 25px 0px 20px 20px;
         filter: invert(1);
         width: 26%;
         height: 26%;
@@ -10,8 +10,8 @@ footer {
 }
 
 .footer-part {
-    @include Text-m;
-    padding: 5px 0px 0px 30px;
+    @include Text-s;
+    padding: 5px 0px 0px 20px;
     i {
         color: white;
         margin-right: 10px;

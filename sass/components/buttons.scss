@@ -1,11 +1,9 @@
-/** Boutons de la page d'accueil **/
+/* Boutton commun page d'accueil et pages restaurants */
 
-/* Page d'accueil */
-
-.home-header__explore-button {
-    margin: 40px 50px 65px 50px;
+.home-header__explore-button, .restaurants-pages-button-order {
+    margin: 25px 0px 60px 0px;
     width: 58%;
-    height: 60px;
+    height: 50px;
     display: flex;
     justify-content: center;
     border: 1px solid $grey-dark;
@@ -13,18 +11,20 @@
     background: -webkit-linear-gradient(180deg, #ff79da,#9356dc);/* Chrome 10-25, Safari 5.1-6 */ 
     background: linear-gradient(180deg, #ff79da,#9356dc);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
     @include Border-shadow;
-    @include Text-m; 
+    @include Text-s; 
     color: white;                                        
 }
+
+/* Page d'accueil */
 
 .home-nav__button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include Text-m;
+    @include Text-s;
     font-weight: 400;
     width: 70%;
-    height: 90px;
+    height: 70px;
     background-color: $grey-light;
     border-radius: 25px;
     @include Border-shadow; 
@@ -44,36 +44,37 @@
 }
 
 .restaurants-part-card {
-width: 95%;
+width: 90%;
 height: auto;
-border-radius: 25px 25px 25px 25px;
+border-radius: 20px;
 @include Text-s;
 @include Border-shadow; 
 background-color: white;
     &__img {
-        height: 210px;
-        border-radius: 25px 25px 0px 0px;
+        height: 170px;
+        border-radius: 20px 20px 0px 0px;
         object-fit: cover;
     }
     &__new {
         background-color: #99E2D0;
         display: inline-block;
-        padding: 10px 20px 10px 20px;
+        padding: 5px 15px 5px 15px;
         color: #008766;
-        border-radius: 5px;
+        border-radius: 4px;
         position: absolute;
         right: 35px;
-        margin-top: 15px;
+        margin-top: 10px;
     }
     &__text {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding: 12px 32px 20px 15px;
-        @include Text-m;
+        @include Text-s;
     }
     &__text h3 {
         font-weight: 600;
+        padding-bottom: 8px;
     }
     &__text i {
         padding-top: 20px;
@@ -81,3 +82,40 @@ background-color: white;
 }
 
 
+/* Pages Restaurants */
+
+.restaurants-pages-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 65px;
+    border: 1px solid $grey-dark;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: white;
+    @include Border-shadow;
+    i {
+        display: none;
+    }
+    &__text {
+        @include Text-s;
+        :nth-child(1) {
+            font-weight: 400;
+            font-size: larger;
+            padding-bottom: 5px;
+        }
+        ~ p {
+            @include Text-s;
+            font-weight: 400;
+            padding-right: 25px;
+            padding-top: 25px;
+        }
+    }
+}
+
+
+.restaurants-pages-button-order {
+    margin-top: 40px;
+    margin-bottom: 40px;           
+}
