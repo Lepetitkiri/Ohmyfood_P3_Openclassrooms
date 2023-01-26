@@ -89,7 +89,7 @@
     background-color: $grey-light;
     height: auto;
     @include Text-l;
-    row-gap: 20px;
+    row-gap: 15px;
     padding-bottom: 55px;
     &__Title {
         align-self: flex-start;
@@ -112,9 +112,12 @@
     @include Text-m;
     font-family: Shrikhand, Roboto, 'sans-serif';
     border-radius: 35px 35px 0px 0px;
-    background-color: red;
+    position: absolute;
+    top: 280px;
+    box-sizing: border-box;
+    width: 100%;
     & i {
-        padding-top: 15px;
+        padding-top: 16px;
     }
 }
 
@@ -126,7 +129,7 @@
     row-gap: 15px;
     &__Title {
         @include Text-s;
-        padding: 7px 0px 5px 12px;
+        padding: 68px 0px 0px 12px;
         width: 20%;
         align-self: baseline;
         span { 
@@ -135,7 +138,7 @@
         }
     }
     &__Title2 {
-        padding-top: 40px;
+        padding-top: 45px;
     }
     + div {
         display: flex;

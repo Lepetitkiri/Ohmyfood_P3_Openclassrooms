@@ -87,7 +87,7 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   background-color: white;
 }
 .restaurants-part-card__img {
-  height: 170px;
+  height: 175px;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
@@ -105,7 +105,7 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 12px 32px 20px 15px;
+  padding: 18px 25px 13px 15px;
   font-size: 15px;
   color: black;
   font-family: Roboto, "comic sans ms", sans-serif;
@@ -116,7 +116,7 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   padding-bottom: 8px;
 }
 .restaurants-part-card__text i {
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 /* Pages Restaurants */
@@ -152,8 +152,8 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   font-family: Roboto, "comic sans ms", sans-serif;
   font-weight: 200;
   font-weight: 400;
-  padding-right: 25px;
-  padding-top: 25px;
+  padding-right: 15px;
+  padding-top: 30px;
 }
 
 .restaurants-pages-button-order {
@@ -180,7 +180,7 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
 }
 .restaurants-pages-header__picture {
   width: 100%;
-  height: 220px;
+  height: 250px;
   display: flex;
   vertical-align: baseline;
 }
@@ -301,7 +301,7 @@ footer img {
   color: black;
   font-family: Roboto, "comic sans ms", sans-serif;
   font-weight: 500;
-  row-gap: 20px;
+  row-gap: 15px;
   padding-bottom: 55px;
 }
 .restaurants-part__Title {
@@ -329,10 +329,13 @@ footer img {
   font-weight: 300;
   font-family: Shrikhand, Roboto, "sans-serif";
   border-radius: 35px 35px 0px 0px;
-  background-color: red;
+  position: absolute;
+  top: 280px;
+  box-sizing: border-box;
+  width: 100%;
 }
 .restaurants-pages-nav i {
-  padding-top: 15px;
+  padding-top: 16px;
 }
 
 .restaurants-pages-menu {
@@ -347,7 +350,7 @@ footer img {
   color: black;
   font-family: Roboto, "comic sans ms", sans-serif;
   font-weight: 200;
-  padding: 7px 0px 5px 12px;
+  padding: 68px 0px 0px 12px;
   width: 20%;
   align-self: baseline;
 }
@@ -356,7 +359,7 @@ footer img {
   border-bottom: 4px solid #99E2D0;
 }
 .restaurants-pages-menu__Title2 {
-  padding-top: 40px;
+  padding-top: 45px;
 }
 .restaurants-pages-menu + div {
   display: flex;

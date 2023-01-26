@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8"/>
-        <title>Ohmyfood - Menu du restaurant : La palette du gout</title>
+        <title>Ohmyfood - Menu du restaurant : La palette du goût</title>
         <link rel="stylesheet" href="public/css/style.css"/>
         <script src="https://kit.fontawesome.com/b5669aba97.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,16 +12,108 @@
     <body>
         <div class="container">
         <header class="restaurants-pages-header">
-            <div>
+            <div class="restaurants-pages-header__logo-part fa-lg">
                 <a href="index.html"> <i class="fa-solid fa-arrow-left"></i> </a>
-                <img src="Images/logo/ohmyfood.png" alt="logo de Ohmyfood"/>
+                <p><img class="restaurants-pages-header__logo" src="Images/logo/ohmyfood.png" alt="logo de Ohmyfood"/></p>
             </div>
-            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Oeuf au plat sur la table du restaurant La palette du gout"/>
+            <img class="restaurants-pages-header__picture" src="Images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Oeuf au plat sur la table d'un restaurant"/>
         </header>
 
-        
 
+        <section>
+            <div class="restaurants-pages-nav">
+                <h1>La palette du goût</h1>
+                <i class="fa-regular fa-heart fa-lg"></i>
+            </div>
 
+            <article class="restaurants-pages-menu">
+                <h2 class="restaurants-pages-menu__Title"><span>ENTR</span>ÉES</h2>
+
+                <div class="restaurants-pages-button">
+                    <div class="restaurants-pages-button__text">
+                        <p>Fricassée d'escargots</p>
+                        <p>Au piment d'Espelette </p>
+                    </div>
+                    <p>25€</p>
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
+                <div class="restaurants-pages-button">
+                    <div class="restaurants-pages-button__text">
+                        <p>Foie gras de canard mi-cuit</p>
+                        <p>Et ses copeaux de truffe noire</p>
+                    </div>
+                    <p>35€</p>
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
+                <div class="restaurants-pages-button">
+                    <div class="restaurants-pages-button__text">
+                        <p>Œuf au plat</p>
+                        <p>Assaisonné à la truffe sur lit de caviar</p>
+                    </div>
+                    <p>20€</p>
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
+            </article>
+
+            <article class="restaurants-pages-menu">
+                <h2 class="restaurants-pages-menu__Title restaurants-pages-menu__Title2"><span>PLAT</span>S</h2>
+
+                <div class="restaurants-pages-button">
+                    <div class="restaurants-pages-button__text">
+                        <p>Filet de boeuf aux herbes</p>
+                        <p>Accompagné de sa ribambelle de légumes</p>
+                    </div>
+                    <p>40€</p>
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
+                <div class="restaurants-pages-button">
+                    <div class="restaurants-pages-button__text">
+                        <p>Parmentier de queue de boeuf</p>
+                        <p>À la truffe noire sur sa purée de panais</p>
+                    </div>
+                    <p>35€</p>
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
+                <div class="restaurants-pages-button">
+                    <div class="restaurants-pages-button__text">
+                        <p>Filet de turbot</p>
+                        <p>Aux agrumes</p>
+                    </div>
+                    <p>44€</p>
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
+            </article>
+
+            <article class="restaurants-pages-menu">
+                <h2 class="restaurants-pages-menu__Title restaurants-pages-menu__Title2"><span>DESS</span>ERTS</h2>
+
+                <div class="restaurants-pages-button">
+                    <div class="restaurants-pages-button__text">
+                        <p>Paris-Brest</p>
+                        <p>Revisité</p>
+                    </div>
+                    <p>18€</p>
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
+                <div class="restaurants-pages-button">
+                    <div class="restaurants-pages-button__text">
+                        <p>Macaron au chocolat d'exception</p>
+                        <p>Et glace à la vanille de Madagascar</p>
+                    </div>
+                    <p>22€</p>
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
+                <div class="restaurants-pages-button">
+                    <div class="restaurants-pages-button__text">
+                        <p>Mousse au chocolat</p>
+                        <p>Au piment d'Espelette et à la truffe noire</p>
+                    </div>
+                    <p>23€</p>
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
+            </article>
+            <div><input class="restaurants-pages-button-order" type="submit" value="Commander"/></div>
+        </section>
 
 
         <footer>
@@ -42,6 +134,6 @@
             </div>
         </footer>
 
-        </div>
+    </div>
     </body>
 </html>
