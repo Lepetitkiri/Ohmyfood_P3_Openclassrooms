@@ -122,8 +122,8 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
 /* Pages Restaurants */
 .restaurants-pages-button {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
-  align-items: center;
   width: 90%;
   height: 65px;
   border: 1px solid #EAEAEA;
@@ -132,7 +132,12 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   background-color: white;
   box-shadow: 5px 5px 30px #EAEAEA;
 }
-.restaurants-pages-button i {
+.restaurants-pages-button label {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.restaurants-pages-button input {
   display: none;
 }
 .restaurants-pages-button__text {
@@ -140,11 +145,13 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   color: black;
   font-family: Roboto, "comic sans ms", sans-serif;
   font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .restaurants-pages-button__text :nth-child(1) {
   font-weight: 400;
   font-size: larger;
-  padding-bottom: 5px;
 }
 .restaurants-pages-button__text ~ p {
   font-size: 15px;
@@ -152,8 +159,8 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   font-family: Roboto, "comic sans ms", sans-serif;
   font-weight: 200;
   font-weight: 400;
-  padding-right: 15px;
-  padding-top: 30px;
+  padding-top: 40px;
+  padding-right: 17px;
 }
 
 .restaurants-pages-button-order {
@@ -209,6 +216,23 @@ footer img {
 }
 .footer-part a {
   color: white;
+}
+
+/* Tests animations  */
+.home-header__explore-button, .restaurants-pages-button-order {
+  transition: transform 200ms;
+}
+.home-header__explore-button:hover, .restaurants-pages-button-order:hover {
+  transform: scale(1.04);
+  background: -webkit-linear-gradient(180deg, #9356DC, #FF79DA); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(180deg, #9356DC, #FF79DA);
+}
+
+.home-nav__button {
+  transition: transform 150ms;
+}
+.home-nav__button:hover {
+  background: -webkit-linear-gradient(180deg, #EAEAEA, #F7F7F7);
 }
 
 /* Page d'accueil */
@@ -343,7 +367,7 @@ footer img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 15px;
+  row-gap: 17px;
 }
 .restaurants-pages-menu__Title {
   font-size: 15px;
@@ -359,11 +383,12 @@ footer img {
   border-bottom: 4px solid #99E2D0;
 }
 .restaurants-pages-menu__Title2 {
-  padding-top: 45px;
+  padding-top: 40px;
 }
 .restaurants-pages-menu + div {
   display: flex;
   justify-content: center;
+  background-color: #F7F7F7;
 }
 
 /*# sourceMappingURL=style.css.map */

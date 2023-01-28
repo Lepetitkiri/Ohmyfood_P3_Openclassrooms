@@ -12,6 +12,7 @@
 @import "./pages/about.scss";
 @import "./pages/project.scss";
 @import "./pages/work.scss";
+@import "./themes/themes";
 
 /* Page d'accueil */
 
@@ -126,7 +127,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 15px;
+    row-gap: 17px;
     &__Title {
         @include Text-s;
         padding: 68px 0px 0px 12px;
@@ -138,10 +139,11 @@
         }
     }
     &__Title2 {
-        padding-top: 45px;
+        padding-top: 40px;
     }
     + div {
         display: flex;
         justify-content: center;
+        background-color: $grey-light;
     }
 }

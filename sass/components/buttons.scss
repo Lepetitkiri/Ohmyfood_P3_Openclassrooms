@@ -86,8 +86,8 @@ background-color: white;
 
 .restaurants-pages-button {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
-    align-items: center;
     width: 90%;
     height: 65px;
     border: 1px solid $grey-dark;
@@ -95,21 +95,28 @@ background-color: white;
     border-radius: 10px;
     background-color: white;
     @include Border-shadow;
-    i {
+    & label {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    & input {
         display: none;
     }
     &__text {
         @include Text-s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         :nth-child(1) {
             font-weight: 400;
             font-size: larger;
-            padding-bottom: 5px;
         }
         ~ p {
             @include Text-s;
             font-weight: 400;
-            padding-right: 15px;
-            padding-top: 30px;
+            padding-top: 40px;
+            padding-right: 17px;
         }
     }
 }

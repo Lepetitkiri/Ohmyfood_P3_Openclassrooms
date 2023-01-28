@@ -1,0 +1,17 @@
+/* Tests animations  */
+
+.home-header__explore-button, .restaurants-pages-button-order {  
+    transition: transform 200ms;
+    &:hover {
+        transform: scale(1.04);
+        background: -webkit-linear-gradient(180deg, $color-primary, $color-secondary);/* Chrome 10-25, Safari 5.1-6 */ 
+        background: linear-gradient(180deg, $color-primary, $color-secondary);
+    }                                 
+}
+
+.home-nav__button {
+    transition: transform 150ms;
+    &:hover {
+        background: -webkit-linear-gradient(180deg, $grey-dark, $grey-light);
+    }
+}
