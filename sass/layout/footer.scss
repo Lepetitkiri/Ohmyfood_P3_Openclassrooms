@@ -5,6 +5,8 @@ footer {
         padding: 25px 0px 20px 20px;
         filter: invert(1);
         width: 26%;
+        min-width: 100px;
+        max-width: 200px;
         height: 26%;
     }
 }

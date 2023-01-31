@@ -29,7 +29,9 @@
         justify-content: center;
     }
     &__logo {
-        width: 180px;
+        width: 26%;
+        min-width: 180px;
+        max-width: 300px;
         height: auto;
         padding-top: 20px;
         padding-bottom: 10px;
@@ -83,20 +85,21 @@
 }
 
 .restaurants-part {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    &__card-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 14px;
+        padding-bottom: 75px;
+    }
+        &__Title {
+        @include Text-l;
+        padding: 50px 0px 25px 15px;
+    }
     background-color: $grey-light;
     height: auto;
     @include Text-l;
-    row-gap: 15px;
-    padding-bottom: 55px;
-    &__Title {
-        align-self: flex-start;
-        @include Text-l;
-        padding: 50px 0px 0px 15px;
-    }
 }
 
 /* Pages restaurants */
@@ -124,10 +127,6 @@
 
 .restaurants-pages-menu {
     background-color: $grey-light;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 17px;
     &__Title {
         @include Text-s;
         padding: 68px 0px 0px 12px;
@@ -147,3 +146,153 @@
         background-color: $grey-light;
     }
 }
+
+.restaurants-pages-menu__buttons-part {
+    width: 100%;
+    padding: 20px 0px 0px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 17px;
+}
+
+
+
+
+
+
+/* Media queries Page d'accueil */
+/** Version tablette **/
+
+@media only screen and (min-width : 780px)
+{
+
+    .home-nav__Buttons-part {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+    }
+    .home-nav__button {
+        padding-right: 10px;
+        width: 25%;
+        min-width: 200px;
+    }
+
+    .restaurants-part-card {
+        width: 20%;
+        height: 320px;
+        &__text h3 {
+            padding-right: 10px; /*sinon trop proche du coeur*/
+        }
+        &__new {
+            position: relative;
+            right: 0;
+            width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+      }    
+    }
+
+    .restaurants-part__card-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
+/** Version Web **/
+
+@media only screen and (min-width : 992px)
+{
+
+    .home-header__explore-button, .restaurants-pages-button-order
+    {
+        width: 40%;
+    }
+
+    .home-nav__Buttons-part {
+        width: 80%;
+        margin-left: 50px;
+    }
+    .home-nav__button {
+        padding-right: 50px;
+        max-width: 280px;
+    }
+
+}
+
+
+/* Media queries Pages restaurants */
+/** Version tablette **/
+
+@media only screen and (min-width : 780px)
+{
+    .restaurants-pages-header__picture {
+    object-fit: cover;
+    height: 350px;
+    }
+
+    .restaurants-pages-nav {
+    top: 370px;
+    height: 150px;
+    align-items: center;
+    padding: 0px 60px 0px 40px;
+        & i {
+        scale: 1.5;
+        }
+    }
+
+    .restaurants-pages-menu {
+    padding-top: 70px;
+    &__Title {
+        padding-left: 50px;
+    }
+    }
+
+    .restaurants-pages-button {
+        padding-left: 30px;
+        &__text {
+            ~ p {
+                padding-top: 30px;
+                padding-right: 30px;
+            }
+        }
+    }
+}
+
+
+/** Version Web **/
+
+@media only screen and (min-width : 992px)
+{
+    .restaurants-pages-header__picture {
+        height: 450px;
+    }
+    .restaurants-pages-nav {
+        top: 450px;
+    }
+    .restaurants-pages-button {
+        width: 45%;
+    }
+    .restaurants-pages-menu__buttons-part {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 17px;
+    }
+
+}
+
+

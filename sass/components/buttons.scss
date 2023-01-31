@@ -51,7 +51,7 @@ border-radius: 20px;
 @include Border-shadow; 
 background-color: white;
     &__img {
-        height: 175px;
+        height: 176px;
         border-radius: 20px 20px 0px 0px;
         object-fit: cover;
     }
@@ -62,15 +62,16 @@ background-color: white;
         color: #008766;
         border-radius: 4px;
         position: absolute;
-        right: 35px;
+        right: 45px;
         margin-top: 10px;
     }
     &__text {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 18px 25px 13px 15px;
+        padding: 10px 25px 13px 15px;
         @include Text-s;
+        height: auto;
     }
     &__text h3 {
         font-weight: 600;
@@ -87,7 +88,6 @@ background-color: white;
 .restaurants-pages-button {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
     width: 90%;
     height: 65px;
     border: 1px solid $grey-dark;
