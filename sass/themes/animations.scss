@@ -1,9 +1,9 @@
 /* Tests animations  */
 
 .home-header__explore-button, .restaurants-pages-button-order {  
-    transition: transform 200ms;
+    transition: transform 600ms;
     &:hover {
-        transform: scale(1.04);
+        transform: scale(1.03);
         background: -webkit-linear-gradient(180deg, $color-primary, $color-secondary);/* Chrome 10-25, Safari 5.1-6 */ 
         background: linear-gradient(180deg, $color-primary, $color-secondary);
     }                                 
