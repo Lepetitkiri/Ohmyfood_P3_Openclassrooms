@@ -1,0 +1,34 @@
+/* Loading spinner for home page */
+
+@keyframes spinner-rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes spinner-disparition {
+    from {opacity: 0.8;}
+    to {opacity: 0;}
+}
+
+/* Pink heart appearring for favorite restaurant */
+
+@keyframes pink-heart {
+    0% {z-index: -1;
+    opacity: 0;}
+    100% {
+        z-index: 1;
+        opacity: 1;}
+    
+}
+
+
+    /* Menu appearance for restaurants pages */
+
+    @keyframes menu-appearance {
+        0% {
+            
+        }
+        
+    }
+
+    /* Dishes's selection */ 

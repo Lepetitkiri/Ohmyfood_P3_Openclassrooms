@@ -24,7 +24,40 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
 
 /* Police Roboto */
 /* Police Shrikhand */
-/* Les couleures */ /* Polices */
+/* Colors */
+/* Animations durations */
+/* Loading spinner for home page */
+@keyframes spinner-rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner-disparition {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/* Pink heart appearring for favorite restaurant */
+@keyframes pink-heart {
+  0% {
+    z-index: -1;
+    opacity: 0;
+  }
+  100% {
+    z-index: 1;
+    opacity: 1;
+  }
+}
+/* Menu appearance for restaurants pages */
+@keyframes menu-appearance {}
+/* Dishes's selection */
+/* Polices */
 /* Bordures */
 /* Boutton commun page d'accueil et pages restaurants */
 .home-header__explore-button, .restaurants-pages-button-order {
@@ -35,14 +68,16 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   border: 1px solid #EAEAEA;
   border-radius: 30px;
-  background: -webkit-linear-gradient(180deg, #ff79da, #9356dc); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(180deg, #ff79da, #9356dc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   box-shadow: 5px 5px 30px #EAEAEA;
   font-size: 15px;
   color: black;
   font-family: Roboto, "comic sans ms", sans-serif;
   font-weight: 200;
   color: white;
+  /* couleur du bouton : gradidnt de 4 couleures et non 2 pour le hover */
+  background: -webkit-linear-gradient(180deg, #ff79da, #9356dc, #fface8, #ae80e5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(180deg, #ff79da, #9356dc, #fface8, #ae80e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 100% 300%;
 }
 
 /* Page d'accueil */
@@ -126,9 +161,10 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: row-reverse;
   width: 90%;
-  height: 65px;
+  min-height: 65px;
+  height: auto;
   border: 1px solid #EAEAEA;
-  padding-left: 10px;
+  padding: 10px 2px 10px 10px;
   border-radius: 10px;
   background-color: white;
   box-shadow: 5px 5px 30px #EAEAEA;
@@ -221,23 +257,56 @@ footer img {
   color: white;
 }
 
-/* Tests animations  */
-.home-header__explore-button, .restaurants-pages-button-order {
-  transition: transform 600ms;
-}
-.home-header__explore-button:hover, .restaurants-pages-button-order:hover {
-  transform: scale(1.03);
-  background: -webkit-linear-gradient(180deg, #9356DC, #FF79DA); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(180deg, #9356DC, #FF79DA);
+/* Loading spinner for home page */
+.spinner {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 18%;
+  border-top: 10px solid #9356DC;
+  border-right: 10px solid transparent;
+  border-radius: 50%;
+  animation: spinner-rotation 2s cubic-bezier(0.4, 0.41, 0.94, 0.84) 150ms 3 both, spinner-disparition 100ms linear 3150ms both;
+  opacity: 0.8;
 }
 
+/* Transition on hover over main buttons for home page */
 .home-nav__button {
-  transition: transform 150ms;
+  transition: box-shadow 1500ms, background-color 1500ms;
 }
 .home-nav__button:hover {
-  background: -webkit-linear-gradient(180deg, #EAEAEA, #F7F7F7);
+  box-shadow: 5px 5px 30px #d1d1d1;
+  background-color: #fafafa;
+  transition: box-shadow 500ms, background-color 500ms;
 }
 
+.home-header__explore-button, .restaurants-pages-button-order {
+  transition: box-shadow 500ms, background-position 5ms;
+}
+.home-header__explore-button:hover, .restaurants-pages-button-order:hover {
+  box-shadow: 5px 5px 30px #d1d1d1;
+  background-position: 0% 100%;
+  transition: box-shadow 500ms, background-position 5ms;
+}
+
+/* NB: Il n'est pas possible d'animer la propriété "Background" alors 
+j'ai créé un background plus grand avec 2 couleurs plus claires
+et j'ai fait varier la position du background verticalement.
+Problème: la durée de la transition doit etre très courte sinon on voit le background défiler*/
+/* Deuxième possibilité a explorer : Mettre un bouton avec un background + clair en position absolue derrière
+et jouer sur l'opacité */
+/* Full Pink heart appearring for restaurants pages */
+.restaurants-pages-nav i:nth-child(2):hover + i {
+  animation: pink-heart 1s linear both;
+  transform-origin: right top;
+}
+
+/* Menu appearance for restaurants pages */
+/* Dishes's selection */
 /* Page d'accueil */
 .home-header {
   display: flex;
@@ -352,7 +421,6 @@ footer img {
   display: flex;
   justify-content: space-between;
   background-color: #F7F7F7;
-  padding: 30px 40px 20px 15px;
   font-size: 20px;
   color: black;
   font-family: Roboto, "comic sans ms", sans-serif;
@@ -363,9 +431,32 @@ footer img {
   top: 280px;
   box-sizing: border-box;
   width: 100%;
+  /* Empty heart for animation */
+  /* Full heart for animation */
 }
-.restaurants-pages-nav i {
-  padding-top: 16px;
+.restaurants-pages-nav h1 {
+  position: relative;
+  top: 40px;
+  left: 5%;
+  width: 80%;
+  height: 87px;
+}
+.restaurants-pages-nav i:nth-child(2) {
+  position: relative;
+  padding-top: 60px;
+  margin-right: 10%;
+  opacity: 1;
+}
+.restaurants-pages-nav i:nth-child(3) {
+  position: absolute;
+  right: 10%;
+  top: 60px;
+  z-index: -1;
+  color: palevioletred;
+}
+
+.restaurant-heart {
+  float: right;
 }
 
 .restaurants-pages-menu {
@@ -376,7 +467,7 @@ footer img {
   color: black;
   font-family: Roboto, "comic sans ms", sans-serif;
   font-weight: 200;
-  padding: 68px 0px 0px 12px;
+  padding: 70px 0px 0px 12px;
   width: 20%;
   align-self: baseline;
 }
@@ -401,6 +492,15 @@ footer img {
   row-gap: 17px;
 }
 
+/* Problème sur les très petits ecrans : 
+le h1 de restaurants-pages-nav passe a la ligne 
+et comme nous avons des positions absolues à cause de l'img et des border radius de restaurants-pages-nav
+le h1 empiète sur le restaurants-pages-menu__Title */
+@media only screen and (max-width: 400px) {
+  .restaurants-pages-menu__Title {
+    padding-top: 100px;
+  }
+}
 /* Media queries Page d'accueil */
 /** Version tablette **/
 @media only screen and (min-width: 780px) {
@@ -472,10 +572,14 @@ footer img {
   .restaurants-pages-nav {
     top: 370px;
     height: 150px;
-    align-items: center;
-    padding: 0px 60px 0px 40px;
   }
-  .restaurants-pages-nav i {
+  .restaurants-pages-nav i:nth-child(2) {
+    margin-right: 5%;
+    scale: 1.5;
+  }
+  .restaurants-pages-nav i:nth-child(3) {
+    right: 4.55%;
+    top: 53px;
     scale: 1.5;
   }
   .restaurants-pages-menu {

@@ -1,4 +1,4 @@
-/* Les couleures */
+/* Colors */
 
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
@@ -7,5 +7,10 @@ $color-tertiary: #99E2D0;
 $grey-light: #F7F7F7;
 $grey-dark: #EAEAEA;
 
+/* Animations durations */
+
+$spinner-delay: 150ms;
+$spinner-duration: 2s;
+$spinner-disparition-delay: $spinner-delay + $spinner-duration + 1s;
 
 

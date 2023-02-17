@@ -2,6 +2,7 @@
 @import "./base/typography.scss";
 @import "./utils/variables";
 @import "./utils/fonctions";
+@import "./utils/Keyframes";
 @import "./utils/Mixins";
 @import "./utils/Placeholders";
 @import "./components/buttons.scss";
@@ -112,7 +113,6 @@
     display: flex;
     justify-content: space-between;
     background-color: $grey-light;
-    padding: 30px 40px 20px 15px;
     @include Text-m;
     font-family: Shrikhand, Roboto, 'sans-serif';
     border-radius: 35px 35px 0px 0px;
@@ -120,16 +120,39 @@
     top: 280px;
     box-sizing: border-box;
     width: 100%;
-    & i {
-        padding-top: 16px;
+    & h1 {
+        position: relative;
+        top: 40px;
+        left: 5%;
+        width: 80%;
+        height: 87px;
     }
+    /* Empty heart for animation */
+    & i:nth-child(2) {
+        position: relative;
+        padding-top: 60px;
+        margin-right: 10%;
+        opacity: 1;
+    }
+    /* Full heart for animation */
+    & i:nth-child(3) {
+        position: absolute;
+        right: 10%;
+        top: 60px;
+        z-index: -1;
+        color: palevioletred;
+    }
+}
+
+.restaurant-heart {
+    float: right;
 }
 
 .restaurants-pages-menu {
     background-color: $grey-light;
     &__Title {
         @include Text-s;
-        padding: 68px 0px 0px 12px;
+        padding: 70px 0px 0px 12px;
         width: 20%;
         align-self: baseline;
         span { 
@@ -155,7 +178,16 @@
     }
 }
 
+/* Problème sur les très petits ecrans : 
+le h1 de restaurants-pages-nav passe a la ligne 
+et comme nous avons des positions absolues à cause de l'img et des border radius de restaurants-pages-nav
+le h1 empiète sur le restaurants-pages-menu__Title */
 
+@media only screen and (max-width : 400px) {
+    .restaurants-pages-menu__Title {
+            padding-top: 100px;
+    }
+}
 
 
 
@@ -252,11 +284,15 @@
     .restaurants-pages-nav {
     top: 370px;
     height: 150px;
-    align-items: center;
-    padding: 0px 60px 0px 40px;
-        & i {
+    i:nth-child(2) {
+        margin-right: 5%;
         scale: 1.5;
-        }
+    }
+    i:nth-child(3) {
+        right: 4.55%;
+        top: 53px;
+        scale: 1.5;
+    }
     }
 
     .restaurants-pages-menu {
