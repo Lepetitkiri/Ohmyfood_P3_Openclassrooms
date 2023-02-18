@@ -71,7 +71,16 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   }
 }
 /* Menu appearance for restaurants pages */
-@keyframes menu-appearance {}
+@keyframes menu-appearance {
+  0% {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-5%);
+  }
+}
 /* Dishes's selection */
 /* Font sizes */
 /* Borders */
@@ -366,6 +375,16 @@ et jouer sur l'opacité */
 }
 
 /* Menu appearance for restaurants pages */
+.restaurants-pages-button--starter {
+  animation: menu-appearance 1500ms both;
+}
+.restaurants-pages-button--dish {
+  animation: menu-appearance 1500ms 500ms both;
+}
+.restaurants-pages-button--dessert {
+  animation: menu-appearance 1500ms 1s both;
+}
+
 /* Dishes's selection */
 /* Page d'accueil */
 .home-header {

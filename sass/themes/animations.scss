@@ -96,5 +96,17 @@ et jouer sur l'opacité */
 
     /* Menu appearance for restaurants pages */
 
+    .restaurants-pages-button {
+        &--starter {
+            animation: menu-appearance 1500ms both;
+        }
+        &--dish {
+            animation: menu-appearance 1500ms 500ms both;
+        }
+        &--dessert {
+            animation: menu-appearance 1500ms 1s both;
+        }
+    }
+
     /* Dishes's selection */ 
 
