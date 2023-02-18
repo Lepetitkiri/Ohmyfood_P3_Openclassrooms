@@ -1,4 +1,4 @@
-/* Polices */
+/* Font sizes */
 
 @mixin Text-xl {
     font-size: 30px;
@@ -28,7 +28,7 @@
     font-weight: 200;
 }
 
-/* Bordures */
+/* Borders */
 
 @mixin Border-shadow {
     box-shadow: 5px 5px 30px $grey-dark;
@@ -36,4 +36,11 @@
 
 @mixin Border-shadow-strong {
     box-shadow: 5px 5px 30px darken($color: $grey-dark, $amount: 10);
+}
+
+/* Spinner data */
+
+@mixin Border-spinner__text--A {
+    border: 6px solid $color-primary;
+    border-radius: 50%;
 }

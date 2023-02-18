@@ -5,9 +5,20 @@
     to {transform: rotate(360deg);}
 }
 
+@keyframes dot-moving {
+    from {transform: translateY(0%);}
+    to {transform: translateY(-100%);}    
+}
+
 @keyframes spinner-disparition {
-    from {opacity: 0.8;}
+    from {opacity: $spinner-opacity;}
     to {opacity: 0;}
+}
+
+@keyframes container-opacity-during-spinner {
+    from {opacity: $spinner-container-opacity;}
+    to {opacity:1;}
+    
 }
 
 /* Pink heart appearring for favorite restaurant */

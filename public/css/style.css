@@ -25,7 +25,7 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
 /* Police Roboto */
 /* Police Shrikhand */
 /* Colors */
-/* Animations durations */
+/* Spinner data */
 /* Loading spinner for home page */
 @keyframes spinner-rotation {
   from {
@@ -35,12 +35,28 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
     transform: rotate(360deg);
   }
 }
+@keyframes dot-moving {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
 @keyframes spinner-disparition {
   from {
-    opacity: 0.8;
+    opacity: 1;
   }
   to {
     opacity: 0;
+  }
+}
+@keyframes container-opacity-during-spinner {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
   }
 }
 /* Pink heart appearring for favorite restaurant */
@@ -57,8 +73,9 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
 /* Menu appearance for restaurants pages */
 @keyframes menu-appearance {}
 /* Dishes's selection */
-/* Polices */
-/* Bordures */
+/* Font sizes */
+/* Borders */
+/* Spinner data */
 /* Boutton commun page d'accueil et pages restaurants */
 .home-header__explore-button, .restaurants-pages-button-order {
   margin: 25px 0px 60px 0px;
@@ -267,11 +284,54 @@ footer img {
   left: 0;
   right: 0;
   top: 18%;
-  border-top: 10px solid #9356DC;
-  border-right: 10px solid transparent;
+  border-top: 12px solid #9356DC;
+  border-right: 12px solid transparent;
   border-radius: 50%;
-  animation: spinner-rotation 2s cubic-bezier(0.4, 0.41, 0.94, 0.84) 150ms 3 both, spinner-disparition 100ms linear 3150ms both;
-  opacity: 0.8;
+  animation: spinner-rotation 2s cubic-bezier(0.4, 0.41, 0.94, 0.84) 150ms 3 both, spinner-disparition 200ms linear 3150ms both;
+  opacity: 1;
+}
+.spinner__text {
+  font-size: 25px;
+  color: black;
+  font-family: Roboto, "comic sans ms", sans-serif;
+  font-weight: 500;
+  height: auto;
+  width: 150px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 30%;
+  text-align: left;
+  opacity: 1;
+  animation: spinner-disparition 200ms linear 3150ms both;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.spinner__point--A {
+  border: 6px solid #9356DC;
+  border-radius: 50%;
+  opacity: 1;
+  animation: dot-moving 300ms infinite alternate, spinner-disparition 200ms linear 3150ms both;
+}
+.spinner__point--B {
+  border: 6px solid #9356DC;
+  border-radius: 50%;
+  opacity: 1;
+  animation: dot-moving 300ms 50ms infinite alternate, spinner-disparition 200ms linear 3150ms both;
+}
+.spinner__point--C {
+  border: 6px solid #9356DC;
+  border-radius: 50%;
+  opacity: 1;
+  animation: dot-moving 300ms 100ms infinite alternate, spinner-disparition 200ms linear 3150ms both;
+}
+
+.container__home {
+  opacity: 0.1;
+  animation: container-opacity-during-spinner 200ms linear 3150ms both;
 }
 
 /* Transition on hover over main buttons for home page */

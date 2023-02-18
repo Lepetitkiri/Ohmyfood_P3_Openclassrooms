@@ -9,11 +9,50 @@
     left: 0;
     right: 0;
     top: 18%;
-    border-top: 10px solid $color-primary;
-    border-right: 10px solid transparent;
+    border-top: 12px solid $color-primary;
+    border-right: 12px solid transparent;
     border-radius: 50%;
-    animation: spinner-rotation $spinner-duration cubic-bezier(0.4,0.41,0.94,0.84) $spinner-delay 3 both, spinner-disparition 100ms linear $spinner-disparition-delay both;
-    opacity: 0.8;
+    animation: spinner-rotation $spinner-duration cubic-bezier(0.4,0.41,0.94,0.84) $spinner-delay 3 both, spinner-disparition $spinner-disparition-duration linear $spinner-disparition-delay both;
+    opacity: $spinner-opacity;
+    &__text {
+        @include Text-l;
+        height: auto;
+        width: 150px;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: $spinner__text-top-value;
+        text-align: left;
+        opacity: $spinner-opacity;
+        animation: spinner-disparition $spinner-disparition-duration linear $spinner-disparition-delay both;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    &__point {
+        &--A {
+            @include Border-spinner__text--A;
+            opacity: $spinner-opacity;
+            animation: dot-moving $dot-duration infinite alternate, spinner-disparition $spinner-disparition-duration linear $spinner-disparition-delay both;
+        }
+        &--B {
+            @include Border-spinner__text--A;
+            opacity: $spinner-opacity;
+            animation: dot-moving $dot-duration 50ms infinite alternate, spinner-disparition $spinner-disparition-duration linear $spinner-disparition-delay both;
+        }
+        &--C {
+            @include Border-spinner__text--A;
+            opacity: $spinner-opacity;
+            animation: dot-moving $dot-duration 100ms infinite alternate, spinner-disparition $spinner-disparition-duration linear $spinner-disparition-delay both;
+        }
+    }
+}
+
+.container__home {
+    opacity: $spinner-container-opacity;
+    animation: container-opacity-during-spinner $spinner-disparition-duration linear $spinner-disparition-delay both;
 }
 
 /* Transition on hover over main buttons for home page */

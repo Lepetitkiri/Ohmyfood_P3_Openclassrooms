@@ -7,10 +7,16 @@ $color-tertiary: #99E2D0;
 $grey-light: #F7F7F7;
 $grey-dark: #EAEAEA;
 
-/* Animations durations */
+/* Spinner data */
 
 $spinner-delay: 150ms;
 $spinner-duration: 2s;
+$spinner-disparition-duration: 200ms;
 $spinner-disparition-delay: $spinner-delay + $spinner-duration + 1s;
+$dot-duration: 300ms;
+
+$spinner__text-top-value: 30%; 
+$spinner-opacity: 1;
+$spinner-container-opacity: 0.1;
 
 
