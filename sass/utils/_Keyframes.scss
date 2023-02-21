@@ -44,3 +44,27 @@
     }
 
     /* Dishes's selection */ 
+
+    @keyframes dish-selected-price {
+        0% {transform: translateX(0%);}
+        100% {transform: translateX(-80%);}
+    }
+
+    @keyframes dish-selected-background {
+        0% {transform: translateX(0%);
+        opacity: 0;
+    background-color: transparent;}
+        20% {opacity: 0;
+        background-color: transparent;}
+        100% {transform: translateX(-100%);
+        opacity: 1;
+    background-color: $color-tertiary;}
+    }
+
+    @keyframes dish-selected-checked {
+        0% { opacity: 0;
+            transform: rotate(0deg);}
+        20% {opacity: 0;}
+        100% {opacity: 1;
+            transform: rotate(360deg);}
+    }

@@ -66,12 +66,20 @@
         }
 }
 
+.restaurants-pages-button {
+    transition: box-shadow 1500ms;
+    &:hover {
+        @include Border-shadow-strong;
+        transition: box-shadow 500ms;
+    }
+}
+
 .home-header__explore-button, .restaurants-pages-button-order {
-    transition: box-shadow 500ms, background-position 5ms;
+    transition: box-shadow 500ms, background-position 10ms;
     &:hover {
         @include Border-shadow-strong;
         background-position: 0% 100%;
-        transition: box-shadow 500ms, background-position 5ms;
+        transition: box-shadow 500ms, background-position 10ms;
     }
 }
 /* NB: Il n'est pas possible d'animer la propriété "Background" alors 
@@ -110,3 +118,40 @@ et jouer sur l'opacité */
 
     /* Dishes's selection */ 
 
+.restaurants-pages-button {
+    &:hover .restaurants-pages-button__checked {
+        animation: dish-selected-background 1s both;
+    } 
+    &:hover i {
+        animation: dish-selected-checked 1s both;
+        opacity: 0;
+        position: absolute;
+    }
+    &:hover &__text {
+        animation: dish-selected-text 1s both;
+        overflow: hidden;
+        ~ p {
+            animation: dish-selected-price 1s both; 
+            background-color: white;
+            width: 20%;
+
+            &:before {
+                content: '... ';
+            }
+        }
+    }
+
+    .restaurants-pages-button__checked {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 19%;
+        height: 100%;
+        opacity: 1;
+        position: absolute;
+        right: -20%;
+        top: 0%;
+        border-radius: 0px 10px 10px 0px;
+    }
+}

@@ -82,6 +82,43 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   }
 }
 /* Dishes's selection */
+@keyframes dish-selected-price {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-80%);
+  }
+}
+@keyframes dish-selected-background {
+  0% {
+    transform: translateX(0%);
+    opacity: 0;
+    background-color: transparent;
+  }
+  20% {
+    opacity: 0;
+    background-color: transparent;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 1;
+    background-color: #99E2D0;
+  }
+}
+@keyframes dish-selected-checked {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
 /* Font sizes */
 /* Borders */
 /* Spinner data */
@@ -353,13 +390,21 @@ footer img {
   transition: box-shadow 500ms, background-color 500ms;
 }
 
+.restaurants-pages-button {
+  transition: box-shadow 1500ms;
+}
+.restaurants-pages-button:hover {
+  box-shadow: 5px 5px 30px #d1d1d1;
+  transition: box-shadow 500ms;
+}
+
 .home-header__explore-button, .restaurants-pages-button-order {
-  transition: box-shadow 500ms, background-position 5ms;
+  transition: box-shadow 500ms, background-position 10ms;
 }
 .home-header__explore-button:hover, .restaurants-pages-button-order:hover {
   box-shadow: 5px 5px 30px #d1d1d1;
   background-position: 0% 100%;
-  transition: box-shadow 500ms, background-position 5ms;
+  transition: box-shadow 500ms, background-position 10ms;
 }
 
 /* NB: Il n'est pas possible d'animer la propriété "Background" alors 
@@ -386,6 +431,40 @@ et jouer sur l'opacité */
 }
 
 /* Dishes's selection */
+.restaurants-pages-button:hover .restaurants-pages-button__checked {
+  animation: dish-selected-background 1s both;
+}
+.restaurants-pages-button:hover i {
+  animation: dish-selected-checked 1s both;
+  opacity: 0;
+  position: absolute;
+}
+.restaurants-pages-button:hover .restaurants-pages-button__text {
+  animation: dish-selected-text 1s both;
+  overflow: hidden;
+}
+.restaurants-pages-button:hover .restaurants-pages-button__text ~ p {
+  animation: dish-selected-price 1s both;
+  background-color: white;
+  width: 20%;
+}
+.restaurants-pages-button:hover .restaurants-pages-button__text ~ p:before {
+  content: "... ";
+}
+.restaurants-pages-button .restaurants-pages-button__checked {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 19%;
+  height: 100%;
+  opacity: 1;
+  position: absolute;
+  right: -20%;
+  top: 0%;
+  border-radius: 0px 10px 10px 0px;
+}
+
 /* Page d'accueil */
 .home-header {
   display: flex;
