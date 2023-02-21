@@ -120,20 +120,22 @@ et jouer sur l'opacité */
 
 .restaurants-pages-button {
     &:hover .restaurants-pages-button__checked {
-        animation: dish-selected-background 1s both;
+        transition: margin-right 1s, width 1s;
+        margin-right: 0px;
+        width: 20%;
     } 
     &:hover i {
-        animation: dish-selected-checked 1s both;
-        opacity: 0;
-        position: absolute;
+        transform: rotate(360deg);
+        transition: transform 1s;
     }
     &:hover &__text {
         animation: dish-selected-text 1s both;
         overflow: hidden;
         ~ p {
-            animation: dish-selected-price 1s both; 
             background-color: white;
             width: 20%;
+            transform: translateX(-40%);
+            transition: transform 1s;
 
             &:before {
                 content: '... ';
@@ -143,15 +145,15 @@ et jouer sur l'opacité */
 
     .restaurants-pages-button__checked {
         color: white;
+        background-color: $color-tertiary;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 19%;
+        width: 0%;
         height: 100%;
-        opacity: 1;
         position: absolute;
-        right: -20%;
         top: 0%;
         border-radius: 0px 10px 10px 0px;
+        overflow: hidden;
     }
 }
