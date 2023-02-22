@@ -3,7 +3,7 @@
 .spinner {
     width: 200px;
     height: 200px;
-    position: absolute;
+    position: fixed;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -18,7 +18,7 @@
         @include Text-l;
         height: auto;
         width: 150px;
-        position: absolute;
+        position: fixed;
         margin-left: auto;
         margin-right: auto;
         left: 0;
@@ -110,7 +110,7 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
     }
                 /* Not asked : entry of title from left */
     .restaurants-pages-menu {
-        &__Title {animation: title-entry ease-out 1s both; }
+        &__Title {animation: title-entry ease-out 700ms both; }
     }
 
 
