@@ -87,13 +87,6 @@ j'ai créé un background plus grand avec 2 couleurs plus claires
 et j'ai fait varier la position du background verticalement.
 Problème: la durée de la transition doit etre très courte sinon on voit le background défiler*/
 
-/* Deuxième possibilité a explorer : Mettre un bouton avec un background + clair en position absolue derrière
-et jouer sur l'opacité */
-
-
-        
-
-
 
 /* Full Pink heart appearring for restaurants pages */
 
@@ -115,6 +108,11 @@ et jouer sur l'opacité */
             animation: menu-appearance 1500ms 1s both;
         }
     }
+                /* Not asked : entry of title from left */
+    .restaurants-pages-menu {
+        &__Title {animation: title-entry ease-out 1s both; }
+    }
+
 
     /* Dishes's selection */ 
 

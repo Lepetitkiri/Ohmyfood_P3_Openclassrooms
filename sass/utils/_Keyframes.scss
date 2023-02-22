@@ -42,3 +42,10 @@
         transform: translateY(-5%);}
         
     }
+
+    /* Not asked : entry of title from left */
+
+    @keyframes title-entry {
+    0% {transform: translateX(-50%);}
+    100% {transform: translateX(0%);}       
+    }

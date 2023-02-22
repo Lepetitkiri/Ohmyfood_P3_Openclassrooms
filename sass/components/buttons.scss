@@ -11,8 +11,9 @@
     @include Border-shadow;
     @include Text-s; 
     color: white;  
+    cursor: pointer;
 
-    /* couleur du bouton : gradidnt de 4 couleures et non 2 pour le hover */
+    /* couleur du bouton : gradient de 4 couleures et non 2 pour le hover */
     background: -webkit-linear-gradient(180deg, #ff79da,#9356dc,#fface8,#ae80e5);/* Chrome 10-25, Safari 5.1-6 */                          
     background: linear-gradient(180deg, #ff79da,#9356dc,#fface8,#ae80e5);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
     background-size: 100% 300%;                                 
