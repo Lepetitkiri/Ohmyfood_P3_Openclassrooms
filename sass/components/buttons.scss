@@ -92,7 +92,8 @@ background-color: white;
 
 .restaurants-pages-button {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    justify-content: space-between;
     overflow: hidden;
     width: 90%;
     min-height: 65px;
@@ -103,14 +104,13 @@ background-color: white;
     background-color: white;
     @include Border-shadow;
     & label {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-    }
-    & input {
         display: none;
     }
+    & input {
+        display: none
+    }
     &__text {
+        width: 100%;
         @include Text-s;
         display: flex;
         flex-direction: column;
@@ -123,7 +123,7 @@ background-color: white;
             @include Text-s;
             font-weight: 400;
             padding-top: 40px;
-            padding-right: 17px;
+            padding-right: 10%;
         }
     }
 }

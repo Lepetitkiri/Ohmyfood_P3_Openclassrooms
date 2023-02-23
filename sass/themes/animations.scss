@@ -118,9 +118,9 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
 
 .restaurants-pages-button {
     &:hover .restaurants-pages-button__checked {
-        transition: margin-right 1s, width 1s;
         margin-right: 0px;
         width: 20%;
+        transition: all 1s, width 1s;
     } 
     &:hover i {
         transform: rotate(360deg);
@@ -151,6 +151,7 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
         height: 100%;
         position: absolute;
         top: 0%;
+        right: 0%;
         border-radius: 0px 10px 10px 0px;
         overflow: hidden;
     }

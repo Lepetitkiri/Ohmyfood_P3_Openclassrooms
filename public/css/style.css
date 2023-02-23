@@ -194,7 +194,8 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
 /* Pages Restaurants */
 .restaurants-pages-button {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  justify-content: space-between;
   overflow: hidden;
   width: 90%;
   min-height: 65px;
@@ -206,14 +207,13 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   box-shadow: 5px 5px 30px #EAEAEA;
 }
 .restaurants-pages-button label {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
+  display: none;
 }
 .restaurants-pages-button input {
   display: none;
 }
 .restaurants-pages-button__text {
+  width: 100%;
   font-size: 15px;
   color: black;
   font-family: Roboto, "comic sans ms", sans-serif;
@@ -233,7 +233,7 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   font-weight: 200;
   font-weight: 400;
   padding-top: 40px;
-  padding-right: 17px;
+  padding-right: 10%;
 }
 
 .restaurants-pages-button-order {
@@ -408,9 +408,9 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
 
 /* Dishes's selection */
 .restaurants-pages-button:hover .restaurants-pages-button__checked {
-  transition: margin-right 1s, width 1s;
   margin-right: 0px;
   width: 20%;
+  transition: all 1s, width 1s;
 }
 .restaurants-pages-button:hover i {
   transform: rotate(360deg);
@@ -439,6 +439,7 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
   height: 100%;
   position: absolute;
   top: 0%;
+  right: 0%;
   border-radius: 0px 10px 10px 0px;
   overflow: hidden;
 }
@@ -710,11 +711,12 @@ le h1 empiète sur le restaurants-pages-menu__Title */
     height: 150px;
   }
   .restaurants-pages-nav i:nth-child(2) {
-    margin-right: 50%;
+    margin-right: 5%;
   }
   .restaurants-pages-nav i:nth-child(3) {
-    right: 4.55%;
-    top: 53px;
+    right: 5%;
+    top: 60px;
+    background-color: red;
   }
   .restaurants-pages-menu {
     padding-top: 70px;
