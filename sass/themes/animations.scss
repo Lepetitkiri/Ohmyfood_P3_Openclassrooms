@@ -88,12 +88,19 @@ et j'ai fait varier la position du background verticalement.
 Problème: la durée de la transition doit etre très courte sinon on voit le background défiler*/
 
 
-/* Full Pink heart appearring for restaurants pages */
+/* Full Pink heart appearring */
+    /* For home page */
+.restaurants-part-card__heart i:nth-child(1):hover + i {
+    animation: pink-heart 500ms linear both;
+    transform-origin: right top;
+}
 
+/* for restaurants pages */
 .restaurants-pages-nav i:nth-child(2):hover + i {
-        animation: pink-heart 1s linear both;
+        animation: pink-heart 500ms linear both;
         transform-origin: right top;
     }
+
 
     /* Menu appearance for restaurants pages */
 
@@ -134,10 +141,6 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
             width: 20%;
             transform: translateX(-40%);
             transition: transform 1s;
-
-            &:before {
-                content: '... ';
-            }
         }
     }
 

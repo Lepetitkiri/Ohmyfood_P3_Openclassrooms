@@ -187,8 +187,22 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   padding-bottom: 8px;
 }
-.restaurants-part-card__text i {
-  padding-top: 15px;
+.restaurants-part-card__heart {
+  position: relative;
+  width: 5%;
+  height: auto;
+}
+.restaurants-part-card__heart :nth-child(1) {
+  /* Empty heart for animation */
+  position: relative;
+  opacity: 1;
+}
+.restaurants-part-card__heart :nth-child(2) {
+  /* Full heart for animation */
+  position: relative;
+  top: -39%;
+  z-index: -1;
+  color: palevioletred;
 }
 
 /* Pages Restaurants */
@@ -384,9 +398,16 @@ footer img {
 j'ai créé un background plus grand avec 2 couleurs plus claires
 et j'ai fait varier la position du background verticalement.
 Problème: la durée de la transition doit etre très courte sinon on voit le background défiler*/
-/* Full Pink heart appearring for restaurants pages */
+/* Full Pink heart appearring */
+/* For home page */
+.restaurants-part-card__heart i:nth-child(1):hover + i {
+  animation: pink-heart 500ms linear both;
+  transform-origin: right top;
+}
+
+/* for restaurants pages */
 .restaurants-pages-nav i:nth-child(2):hover + i {
-  animation: pink-heart 1s linear both;
+  animation: pink-heart 500ms linear both;
   transform-origin: right top;
 }
 
@@ -425,9 +446,6 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
   width: 20%;
   transform: translateX(-40%);
   transition: transform 1s;
-}
-.restaurants-pages-button:hover .restaurants-pages-button__text ~ p:before {
-  content: "... ";
 }
 .restaurants-pages-button .restaurants-pages-button__checked {
   color: white;
@@ -655,19 +673,19 @@ le h1 empiète sur le restaurants-pages-menu__Title */
   }
   .restaurants-part-card {
     width: 40%;
-    height: 320px;
+    height: 280px;
   }
-  .restaurants-part-card__text h3 {
-    padding-right: 10px; /*sinon trop proche du coeur*/
+  .restaurants-part-card__text {
+    margin-top: -20px;
   }
   .restaurants-part-card__new {
     position: relative;
-    right: 0;
     width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 10px;
+    top: -55%;
+    right: -70%;
   }
   .restaurants-part__card-section {
     display: flex;
@@ -696,7 +714,10 @@ le h1 empiète sur le restaurants-pages-menu__Title */
     max-width: 280px;
   }
   .restaurants-part-card {
-    width: 20%;
+    width: 22%;
+  }
+  .restaurants-part-card__new {
+    right: -60%;
   }
 }
 /* Media queries Pages restaurants */
