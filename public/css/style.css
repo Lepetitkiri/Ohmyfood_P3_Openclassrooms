@@ -776,7 +776,7 @@ le h1 empiète sur le restaurants-pages-menu__Title */
   }
   .restaurants-pages-button__text ~ p {
     padding-top: 50px;
-    padding-right: 20px;
+    padding-right: 25px;
   }
   .restaurants-pages-button-part {
     display: flex;
