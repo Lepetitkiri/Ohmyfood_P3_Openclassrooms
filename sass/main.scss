@@ -224,8 +224,8 @@ le h1 empiète sur le restaurants-pages-menu__Title */
             display: flex;
             align-items: center;
             justify-content: center;
-            top: -55%;
-            right: -70%;
+            top: -65%;
+            right: -73%;
       }    
     }
 
@@ -268,9 +268,17 @@ le h1 empiète sur le restaurants-pages-menu__Title */
     .restaurants-part-card {
         width: 22%;
         &__new {
-            right: -60%;
-        }
+            right: -62%;
+      }    
     }        
+}
+
+@media only screen and (min-width : 1540px)
+{
+    /* Ajout necessaire d'une taille intermédiaire pour positionner correctement le new*/
+    .restaurants-part-card__new {
+            right: -75%;
+      }    
 }
 
 

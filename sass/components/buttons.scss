@@ -107,8 +107,7 @@ background-color: white;
 .restaurants-pages-button {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    overflow: hidden;
+    justify-content: space-between;    
     width: 90%;
     min-height: 65px;
     height: auto;
@@ -117,11 +116,12 @@ background-color: white;
     border-radius: 10px;
     background-color: white;
     @include Border-shadow;
+    white-space: nowrap;
     & label {
         display: none;
     }
     & input {
-        display: none
+        display: none;
     }
     &__text {
         width: 100%;
@@ -138,6 +138,7 @@ background-color: white;
             font-weight: 400;
             padding-top: 40px;
             padding-right: 10%;
+            padding-left: 2%;
         }
     }
 }
