@@ -239,6 +239,14 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
 .restaurants-pages-button__text :nth-child(1) {
   font-weight: 400;
   font-size: larger;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.restaurants-pages-button__text :nth-child(2) {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .restaurants-pages-button__text ~ p {
   font-size: 15px;
@@ -429,6 +437,11 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
 }
 
 /* Dishes's selection */
+.restaurants-pages-button {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 .restaurants-pages-button:hover .restaurants-pages-button__checked {
   margin-right: 0px;
   width: 20%;

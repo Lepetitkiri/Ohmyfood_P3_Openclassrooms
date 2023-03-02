@@ -124,6 +124,9 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
     /* Dishes's selection */ 
 
 .restaurants-pages-button {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
     &:hover .restaurants-pages-button__checked {
         margin-right: 0px;
         width: 20%;

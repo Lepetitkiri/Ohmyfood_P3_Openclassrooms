@@ -107,7 +107,7 @@ background-color: white;
 .restaurants-pages-button {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;    
+    justify-content: space-between;  
     width: 90%;
     min-height: 65px;
     height: auto;
@@ -132,6 +132,14 @@ background-color: white;
         :nth-child(1) {
             font-weight: 400;
             font-size: larger;
+            text-overflow: ellipsis;
+            overflow:hidden;
+            white-space: nowrap;
+        }
+        :nth-child(2) {
+            text-overflow: ellipsis;
+            overflow:hidden;
+            white-space: nowrap;
         }
         ~ p {
             @include Text-s;
