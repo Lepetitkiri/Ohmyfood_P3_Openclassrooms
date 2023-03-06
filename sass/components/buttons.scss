@@ -125,6 +125,7 @@ background-color: white;
     }
     &__text {
         width: 100%;
+        max-width: 80%;
         @include Text-s;
         display: flex;
         flex-direction: column;

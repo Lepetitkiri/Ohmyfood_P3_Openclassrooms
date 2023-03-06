@@ -228,6 +228,7 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
 }
 .restaurants-pages-button__text {
   width: 100%;
+  max-width: 80%;
   font-size: 15px;
   color: black;
   font-family: Roboto, "comic sans ms", sans-serif;
