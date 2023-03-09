@@ -148,6 +148,8 @@ background-color: white;
             padding-top: 40px;
             padding-right: 10%;
             padding-left: 2%;
+            /* Correction de l'ellipsis après soutenance (translation -> width)*/
+            transition: all 1s;
         }
     }
 }

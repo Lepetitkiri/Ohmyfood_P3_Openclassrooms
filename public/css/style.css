@@ -259,6 +259,8 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   padding-top: 40px;
   padding-right: 10%;
   padding-left: 2%;
+  /* Correction de l'ellipsis après soutenance (translation -> width)*/
+  transition: all 1s;
 }
 
 .restaurants-pages-button-order {
@@ -463,7 +465,6 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
   /* Correction de l'ellipsis après soutenance (translation -> width)*/
   width: 20%;
   margin-right: 20%;
-  transition: all 1s;
 }
 .restaurants-pages-button .restaurants-pages-button__checked {
   color: white;
