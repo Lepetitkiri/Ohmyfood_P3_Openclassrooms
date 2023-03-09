@@ -78,7 +78,8 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   }
   100% {
     opacity: 1;
-    transform: translateY(-5%);
+    /* Correction de l'intensité de la translation après soutenance */
+    transform: translateY(-15%);
   }
 }
 /* Not asked : entry of title from left */
@@ -443,24 +444,26 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
   white-space: nowrap;
   overflow: hidden;
 }
+.restaurants-pages-button__checked {
+  transition: width 1s; /*Correction du check retour (sorti de la balise :hover) après soutenance*/
+}
 .restaurants-pages-button:hover .restaurants-pages-button__checked {
   margin-right: 0px;
   width: 20%;
-  transition: all 1s, width 1s;
 }
 .restaurants-pages-button:hover i {
   transform: rotate(360deg);
   transition: transform 1s;
 }
 .restaurants-pages-button:hover .restaurants-pages-button__text {
-  animation: dish-selected-text 1s both;
   overflow: hidden;
 }
 .restaurants-pages-button:hover .restaurants-pages-button__text ~ p {
   background-color: white;
+  /* Correction de l'ellipsis après soutenance (translation -> width)*/
   width: 20%;
-  transform: translateX(-40%);
-  transition: transform 1s;
+  margin-right: 20%;
+  transition: all 1s;
 }
 .restaurants-pages-button .restaurants-pages-button__checked {
   color: white;

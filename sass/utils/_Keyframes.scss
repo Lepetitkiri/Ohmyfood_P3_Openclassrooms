@@ -39,7 +39,8 @@
         0% { opacity: 0;
         transform: translateY(0%)}
         100% { opacity: 1;
-        transform: translateY(-5%);}
+            /* Correction de l'intensité de la translation après soutenance */
+        transform: translateY(-15%);}
         
     }
 

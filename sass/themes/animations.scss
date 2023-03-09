@@ -127,25 +127,29 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    &__checked {
+        transition: width 1s; /*Correction du check retour (sorti de la balise :hover) après soutenance*/
+    }
     &:hover .restaurants-pages-button__checked {
         margin-right: 0px;
         width: 20%;
-        transition: all 1s, width 1s;
+
     } 
     &:hover i {
         transform: rotate(360deg);
         transition: transform 1s;
     }
     &:hover &__text {
-        animation: dish-selected-text 1s both;
         overflow: hidden;
         ~ p {
             background-color: white;
+            /* Correction de l'ellipsis après soutenance (translation -> width)*/
             width: 20%;
-            transform: translateX(-40%);
-            transition: transform 1s;
+            margin-right: 20%;
+            transition: all 1s;
         }
     }
+
 
     .restaurants-pages-button__checked {
         color: white;
