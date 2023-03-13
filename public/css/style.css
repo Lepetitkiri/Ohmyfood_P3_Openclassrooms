@@ -641,7 +641,7 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
   color: black;
   font-family: Roboto, "comic sans ms", sans-serif;
   font-weight: 200;
-  padding: 70px 0px 0px 12px;
+  padding: 70px 0px 10px 12px;
   width: 20%;
   align-self: baseline;
 }

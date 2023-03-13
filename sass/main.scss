@@ -145,7 +145,7 @@
     background-color: $grey-light;
     &__Title {
         @include Text-s;
-        padding: 70px 0px 0px 12px;
+        padding: 70px 0px 10px 12px;
         width: 20%;
         align-self: baseline;
         span { 
