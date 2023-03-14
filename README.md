@@ -1,13 +1,14 @@
 Ohmyfood_P3_Openclassrooms
+
 Contexte de travail : Formation Openclassrooms Developpeur web - Projet P3 (Oh my food) - HTML SCSS
 
 
 Axes de travail :
 
-Utilisation de github
-Creation d'animations CSS
-Sass/SCSS
-HTML
+- Utilisation de github
+- Creation d'animations CSS
+- Sass/SCSS
+- HTML
 
 
 Client : Ohmyfood
