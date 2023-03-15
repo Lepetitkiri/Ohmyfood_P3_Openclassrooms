@@ -188,23 +188,6 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   padding-bottom: 8px;
 }
-.restaurants-part-card__heart {
-  position: relative;
-  width: 5%;
-  height: auto;
-}
-.restaurants-part-card__heart :nth-child(1) {
-  /* Empty heart for animation */
-  position: relative;
-  opacity: 1;
-}
-.restaurants-part-card__heart :nth-child(2) {
-  /* Full heart for animation */
-  position: relative;
-  top: -39%;
-  z-index: -1;
-  color: palevioletred;
-}
 
 /* Pages Restaurants */
 .restaurants-pages-button {
@@ -412,16 +395,32 @@ j'ai créé un background plus grand avec 2 couleurs plus claires
 et j'ai fait varier la position du background verticalement.
 Problème: la durée de la transition doit etre très courte sinon on voit le background défiler*/
 /* Full Pink heart appearring */
-/* For home page */
-.restaurants-part-card__heart i:nth-child(1):hover + i {
-  animation: pink-heart 500ms linear both;
-  transform-origin: right top;
+#heart2 {
+  height: 25px;
+  width: 25px;
+  fill: transparent;
+  stroke: black;
+  stroke-width: 2;
+  position: relative;
 }
 
-/* for restaurants pages */
-.restaurants-pages-nav i:nth-child(2):hover + i {
-  animation: pink-heart 500ms linear both;
-  transform-origin: right top;
+#heart {
+  height: 30px;
+  width: 30px;
+  fill: transparent;
+  stroke: black;
+  stroke-width: 2;
+  position: relative;
+  padding-top: 40px;
+  margin-right: 10%;
+  opacity: 1;
+}
+
+#heart :hover, #heart :active, #heart2 :hover, #heart2 :active {
+  fill: #E453B4;
+  stroke: #b51c82;
+  transition: fill 0.8s ease-out, stroke 0.6s 0.2s ease-out;
+  transform-origin: top right;
 }
 
 /* Menu appearance for restaurants pages */
@@ -594,6 +593,7 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
 .restaurants-pages-nav {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   background-color: #F7F7F7;
   font-size: 20px;
   color: black;
@@ -605,8 +605,6 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
   top: 280px;
   box-sizing: border-box;
   width: 100%;
-  /* Empty heart for animation */
-  /* Full heart for animation */
 }
 .restaurants-pages-nav h1 {
   position: relative;
@@ -614,23 +612,6 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
   left: 5%;
   width: 80%;
   height: 87px;
-}
-.restaurants-pages-nav i:nth-child(2) {
-  position: relative;
-  padding-top: 60px;
-  margin-right: 10%;
-  opacity: 1;
-}
-.restaurants-pages-nav i:nth-child(3) {
-  position: absolute;
-  right: 10%;
-  top: 60px;
-  z-index: -1;
-  color: palevioletred;
-}
-
-.restaurant-heart {
-  float: right;
 }
 
 .restaurants-pages-menu {
@@ -756,13 +737,8 @@ le h1 empiète sur le restaurants-pages-menu__Title */
     top: 370px;
     height: 150px;
   }
-  .restaurants-pages-nav i:nth-child(2) {
-    margin-right: 5%;
-  }
-  .restaurants-pages-nav i:nth-child(3) {
-    right: 5%;
-    top: 60px;
-    background-color: red;
+  #heart {
+    scale: 1.5;
   }
   .restaurants-pages-menu {
     padding-top: 70px;

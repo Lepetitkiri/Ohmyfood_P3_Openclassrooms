@@ -105,6 +105,7 @@
 .restaurants-pages-nav {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     background-color: $grey-light;
     @include Text-m;
     font-family: Shrikhand, Roboto, 'sans-serif';
@@ -120,26 +121,9 @@
         width: 80%;
         height: 87px;
     }
-    /* Empty heart for animation */
-    & i:nth-child(2) {
-        position: relative;
-        padding-top: 60px;
-        margin-right: 10%;
-        opacity: 1;
-    }
-    /* Full heart for animation */
-    & i:nth-child(3) {
-        position: absolute;
-        right: 10%;
-        top: 60px;
-        z-index: -1;
-        color: palevioletred;
-    }
 }
 
-.restaurant-heart {
-    float: right;
-}
+
 
 .restaurants-pages-menu {
     background-color: $grey-light;
@@ -288,14 +272,10 @@ le h1 empiète sur le restaurants-pages-menu__Title */
     .restaurants-pages-nav {
     top: 370px;
     height: 150px;
-    i:nth-child(2) {
-        margin-right: 5%;
     }
-    i:nth-child(3) {
-        right: 5%;
-        top: 60px;
-        background-color: red;
-    }
+
+    #heart {
+        scale: 1.5;
     }
 
     .restaurants-pages-menu {

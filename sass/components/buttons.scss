@@ -82,23 +82,6 @@ background-color: white;
         font-weight: 600;
         padding-bottom: 8px;
     }
-    &__heart {
-        position: relative;
-        width: 5%;
-        height: auto;
-        & :nth-child(1) {
-             /* Empty heart for animation */
-             position: relative;
-             opacity: 1;
-        }
-        & :nth-child(2) {
-            /* Full heart for animation */
-            position: relative;
-            top: -39%;
-            z-index: -1;
-            color: palevioletred;
-        }
-    }
 }
 
 
