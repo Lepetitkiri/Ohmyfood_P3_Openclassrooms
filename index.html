@@ -1,150 +1,168 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <title>Ohmyfood</title>
-        <link rel="stylesheet" href="public/css/style.css">
-        <script src="https://kit.fontawesome.com/b5669aba97.js" crossorigin="anonymous"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    
 
-    <body>
-        <!-- Spinner -->
-        <div class="spinner"></div>
-        <div class="spinner__text"> 
-            <div class="spinner__Text--loading">Loading</div>
-            <div class="spinner__point--A"></div>
-            <div class="spinner__point--B"></div>
-            <div class="spinner__point--C"></div>
-        </div>
-        <div class="container__home">
-            <header class="home-header">
-                <p><img class="home-header__logo" src="Images/logo/ohmyfood.png" alt="logo de Ohmyfood"></p>
-                <div class="home-header__search-bar"> 
-                        <form method="post" action="traitement.php">
-                            <i class="fa-solid fa-location-dot fa-s"></i>
-                            <input type="text" name="location_requested" placeholder="Paris, Belleville">
-                        </form>
-                </div>
-                <h2 class="home-header__title">Réservez le menu qui vous convient</h2>
-                <h1 class="home-header__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</h1>
-                <input class="home-header__explore-button" type="button" value="Explorer nos restaurants">
-            </header>
+<head>
+    <meta charset="UTF-8">
+    <title>Ohmyfood</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <script src="https://kit.fontawesome.com/b5669aba97.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
 
-            <main>
-                <nav class="home-nav">
-                    <h3 class="home-nav__Title">Fonctionnement</h3>
-                    <div class="home-nav__Buttons-part">
-                        <div class="home-nav__button">
-                            <p class="home-nav__button-number">1</p>
-                            <p class="home-nav__button-icone"><i class="fa-solid fa-mobile-screen fa-lg"></i></p>
-                            <p class="home-nav__button-text">Choisissez un restaurant</p>
-                        </div>
-                        <div class="home-nav__button">
-                            <p class="home-nav__button-number">2</p>
-                            <p class="home-nav__button-icone"><i class="fa-solid fa-list-ul fa-lg"></i></p>
-                            <p class="home-nav__button-text">Composez votre menu</p>
-                        </div>
-                        <div class="home-nav__button">
-                            <p class="home-nav__button-number">3</p>
-                            <p class="home-nav__button-icone"><i class="fa-solid fa-store fa-lg"></i></p>
-                            <p class="home-nav__button-text">Dégustez au restaurant</p>
-                        </div>
+<body>
+    <!-- Spinner -->
+    <div class="spinner"></div>
+    <div class="spinner__text">
+        <div class="spinner__Text--loading">Loading</div>
+        <div class="spinner__point--A"></div>
+        <div class="spinner__point--B"></div>
+        <div class="spinner__point--C"></div>
+    </div>
+    <div class="container__home">
+        <header class="home-header">
+            <p><img class="home-header__logo" src="Images/logo/ohmyfood.png" alt="logo de Ohmyfood"></p>
+            <div class="home-header__search-bar">
+                <form method="post" action="traitement.php">
+                    <i class="fa-solid fa-location-dot fa-s"></i>
+                    <input type="text" name="location_requested" placeholder="Paris, Belleville">
+                </form>
+            </div>
+            <h2 class="home-header__title">Réservez le menu qui vous convient</h2>
+            <h1 class="home-header__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</h1>
+            <input class="home-header__explore-button" type="button" value="Explorer nos restaurants">
+        </header>
+
+
+        <main>
+            <nav class="home-nav">
+                <h3 class="home-nav__Title">Fonctionnement</h3>
+                <div class="home-nav__Buttons-part">
+                    <div class="home-nav__button">
+                        <p class="home-nav__button-number">1</p>
+                        <p class="home-nav__button-icone"><i class="fa-solid fa-mobile-screen fa-lg"></i></p>
+                        <p class="home-nav__button-text">Choisissez un restaurant</p>
                     </div>
-                </nav>
-
-                <section class="restaurants-part">
-                    <h3 class="restaurants-part__Title">Restaurants</h3>
-
-                    <div class="restaurants-part__card-section">
-                        <article class="restaurants-part-card">
-                            <a href="restaurant_page_la_palette_du_gout.html">
-                                <img class="restaurants-part-card__img" src="Images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Oeuf au plat sur la table du restaurant La palette du gout">
-                                <p class="restaurants-part-card__new">Nouveau</p>
-                                <div class="restaurants-part-card__text">
-                                    <div>
-                                        <h3>La palette du goût</h3>
-                                        <p>Ménilmontant</p>
-                                    </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" id="heart2" data-name="Layer_1" viewBox="-5 0 30 30">
-                                        <path d="M17.5.917a6.4,6.4,0,0,0-5.5,3.3A6.4,6.4,0,0,0,6.5.917,6.8,6.8,0,0,0,0,7.967c0,6.775,10.956,14.6,11.422,14.932l.578.409.578-.409C13.044,22.569,24,14.742,24,7.967A6.8,6.8,0,0,0,17.5.917Z"/>
-                                    </svg>
-                                </div>
-                            </a>
-                        </article>
-
-                        <article class="restaurants-part-card">
-                            <a href="restaurant_page_la_note_enchantee.html">
-                                <img class="restaurants-part-card__img" src="Images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Mijoté de queue de boeuf sur la table du restaurant La note enchantée">
-                                <p class="restaurants-part-card__new">Nouveau</p>
-                                <div class="restaurants-part-card__text">
-                                    <div>
-                                        <h3>La note enchantée</h3>
-                                        <p>Charonne</p>
-                                    </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" id="heart2" data-name="Layer_1" viewBox="-5 0 30 30">
-                                        <path d="M17.5.917a6.4,6.4,0,0,0-5.5,3.3A6.4,6.4,0,0,0,6.5.917,6.8,6.8,0,0,0,0,7.967c0,6.775,10.956,14.6,11.422,14.932l.578.409.578-.409C13.044,22.569,24,14.742,24,7.967A6.8,6.8,0,0,0,17.5.917Z"/>
-                                    </svg>
-                                </div>
-                            </a>
-                        </article>
-
-                        <article class="restaurants-part-card">
-                            <a href="restaurant_page_a_la_francaise.html">
-                                <img class="restaurants-part-card__img" src="Images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Soupe à l'oignon revisitée sur la table du restaurant A la francaise">
-                                <p class="restaurants-part-card__new">Nouveau</p>
-                                <div class="restaurants-part-card__text">
-                                    <div>
-                                        <h3>À la française</h3>
-                                        <p>Cité Rouge</p>
-                                    </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" id="heart2" data-name="Layer_1" viewBox="-5 0 30 30">
-                                        <path d="M17.5.917a6.4,6.4,0,0,0-5.5,3.3A6.4,6.4,0,0,0,6.5.917,6.8,6.8,0,0,0,0,7.967c0,6.775,10.956,14.6,11.422,14.932l.578.409.578-.409C13.044,22.569,24,14.742,24,7.967A6.8,6.8,0,0,0,17.5.917Z"/>
-                                    </svg>
-                                </div>
-                            </a>
-                        </article>
-
-                        <article class="restaurants-part-card">
-                            <a href="restaurant_page_le_delice_des_sens.html">
-                                <img class="restaurants-part-card__img" src="Images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Tartare de thon sur la table du restaurant Le delice des sens">
-                                <p class="restaurants-part-card__new">Nouveau</p>
-                                <div class="restaurants-part-card__text">
-                                    <div>
-                                        <h3>Le délice des sens</h3>
-                                        <p>Folie-Méricourt</p>
-                                    </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" id="heart2" data-name="Layer_1" viewBox="-5 0 30 30">
-                                        <path d="M17.5.917a6.4,6.4,0,0,0-5.5,3.3A6.4,6.4,0,0,0,6.5.917,6.8,6.8,0,0,0,0,7.967c0,6.775,10.956,14.6,11.422,14.932l.578.409.578-.409C13.044,22.569,24,14.742,24,7.967A6.8,6.8,0,0,0,17.5.917Z"/>
-                                    </svg>
-                                </div>
-                            </a>
-                        </article>
+                    <div class="home-nav__button">
+                        <p class="home-nav__button-number">2</p>
+                        <p class="home-nav__button-icone"><i class="fa-solid fa-list-ul fa-lg"></i></p>
+                        <p class="home-nav__button-text">Composez votre menu</p>
                     </div>
-                </section>
-            </main>
+                    <div class="home-nav__button">
+                        <p class="home-nav__button-number">3</p>
+                        <p class="home-nav__button-icone"><i class="fa-solid fa-store fa-lg"></i></p>
+                        <p class="home-nav__button-text">Dégustez au restaurant</p>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="restaurants-part">
+                <h3 class="restaurants-part__Title">Restaurants</h3>
+
+                <div class="restaurants-part__card-section">
+                    <article class="restaurants-part-card">
+                        <a href="restaurant_page_la_palette_du_gout.html">
+                            <img class="restaurants-part-card__img"
+                                src="Images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                                alt="Oeuf au plat sur la table du restaurant La palette du gout">
+                            <p class="restaurants-part-card__new">Nouveau</p>
+                            <div class="restaurants-part-card__text">
+                                <div>
+                                    <h3>La palette du goût</h3>
+                                    <p>Ménilmontant</p>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" id="heart2" data-name="Layer_1"
+                                    viewBox="-5 0 30 30">
+                                    <path
+                                        d="M17.5.917a6.4,6.4,0,0,0-5.5,3.3A6.4,6.4,0,0,0,6.5.917,6.8,6.8,0,0,0,0,7.967c0,6.775,10.956,14.6,11.422,14.932l.578.409.578-.409C13.044,22.569,24,14.742,24,7.967A6.8,6.8,0,0,0,17.5.917Z" />
+                                </svg>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="restaurants-part-card">
+                        <a href="restaurant_page_la_note_enchantee.html">
+                            <img class="restaurants-part-card__img"
+                                src="Images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                                alt="Mijoté de queue de boeuf sur la table du restaurant La note enchantée">
+                            <p class="restaurants-part-card__new">Nouveau</p>
+                            <div class="restaurants-part-card__text">
+                                <div>
+                                    <h3>La note enchantée</h3>
+                                    <p>Charonne</p>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" id="heart2" data-name="Layer_1"
+                                    viewBox="-5 0 30 30">
+                                    <path
+                                        d="M17.5.917a6.4,6.4,0,0,0-5.5,3.3A6.4,6.4,0,0,0,6.5.917,6.8,6.8,0,0,0,0,7.967c0,6.775,10.956,14.6,11.422,14.932l.578.409.578-.409C13.044,22.569,24,14.742,24,7.967A6.8,6.8,0,0,0,17.5.917Z" />
+                                </svg>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="restaurants-part-card">
+                        <a href="restaurant_page_a_la_francaise.html">
+                            <img class="restaurants-part-card__img"
+                                src="Images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                                alt="Soupe à l'oignon revisitée sur la table du restaurant A la francaise">
+                            <p class="restaurants-part-card__new">Nouveau</p>
+                            <div class="restaurants-part-card__text">
+                                <div>
+                                    <h3>À la française</h3>
+                                    <p>Cité Rouge</p>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" id="heart2" data-name="Layer_1"
+                                    viewBox="-5 0 30 30">
+                                    <path
+                                        d="M17.5.917a6.4,6.4,0,0,0-5.5,3.3A6.4,6.4,0,0,0,6.5.917,6.8,6.8,0,0,0,0,7.967c0,6.775,10.956,14.6,11.422,14.932l.578.409.578-.409C13.044,22.569,24,14.742,24,7.967A6.8,6.8,0,0,0,17.5.917Z" />
+                                </svg>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="restaurants-part-card">
+                        <a href="restaurant_page_le_delice_des_sens.html">
+                            <img class="restaurants-part-card__img"
+                                src="Images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                                alt="Tartare de thon sur la table du restaurant Le delice des sens">
+                            <p class="restaurants-part-card__new">Nouveau</p>
+                            <div class="restaurants-part-card__text">
+                                <div>
+                                    <h3>Le délice des sens</h3>
+                                    <p>Folie-Méricourt</p>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" id="heart2" data-name="Layer_1"
+                                    viewBox="-5 0 30 30">
+                                    <path
+                                        d="M17.5.917a6.4,6.4,0,0,0-5.5,3.3A6.4,6.4,0,0,0,6.5.917,6.8,6.8,0,0,0,0,7.967c0,6.775,10.956,14.6,11.422,14.932l.578.409.578-.409C13.044,22.569,24,14.742,24,7.967A6.8,6.8,0,0,0,17.5.917Z" />
+                                </svg>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </main>
 
 
-            <footer>
-                <img src="Images/logo/ohmyfood@2x.svg" alt="logo de Ohmyfood">
-                <div class="footer-part">
-                    <i class="fa-solid fa-utensils fa-xs"></i>
-                    <a href="#proposer_un_restautant.html">Proposer un restaurant</a>
-                </div>
-                <div class="footer-part">
-                    <i class="fa-solid fa-handshake-angle fa-xs"></i>
-                    <a href="#devenir_partenaire.html">Devenir partenaire</a>
-                </div>
-                <div class="footer-part">
-                    <a href="#mentions_legales.html">Mentions légales</a>
-                </div>
-                <div class="footer-part">
-                    <a href="mailto:contact@ohmyfood.com">Contact</a>
-                </div>
-            </footer>
+        <footer>
+            <img src="Images/logo/ohmyfood@2x.svg" alt="logo de Ohmyfood">
+            <div class="footer-part">
+                <i class="fa-solid fa-utensils fa-xs"></i>
+                <a href="#proposer_un_restautant.html">Proposer un restaurant</a>
+            </div>
+            <div class="footer-part">
+                <i class="fa-solid fa-handshake-angle fa-xs"></i>
+                <a href="#devenir_partenaire.html">Devenir partenaire</a>
+            </div>
+            <div class="footer-part">
+                <a href="#mentions_legales.html">Mentions légales</a>
+            </div>
+            <div class="footer-part">
+                <a href="mailto:contact@ohmyfood.com">Contact</a>
+            </div>
+        </footer>
 
-        </div>
-    </body>
+    </div>
+</body>
+
 </html>
