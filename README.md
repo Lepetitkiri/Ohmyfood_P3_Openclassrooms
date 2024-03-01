@@ -17,3 +17,7 @@ Le projet comporte 5 pages :
 # Visuel attendu lors de l'exercice 
 
 ![image](https://user-images.githubusercontent.com/121162994/224929954-cc0797e9-ddde-4140-b7ed-3103de9930e9.png)
+
+# Démarrage du Frontend
+
+Le projet étant codé en HTML simple, il suffit d'ouvrir le fichier `index.html` dans un navigateur web.
