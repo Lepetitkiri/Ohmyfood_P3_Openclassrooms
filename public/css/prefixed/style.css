@@ -2,12 +2,13 @@
 /* Généralités */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
 .container {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 a {
@@ -35,7 +36,19 @@ a {
   color: black;
 }
 
-html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
+html,
+body,
+div,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
 }
@@ -48,149 +61,178 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
 @-webkit-keyframes spinner-rotation {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
+
   to {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
+
 @keyframes spinner-rotation {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
+
   to {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
+
 @-webkit-keyframes dot-moving {
   from {
     -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    transform: translateY(0%);
   }
+
   to {
     -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    transform: translateY(-100%);
   }
 }
+
 @keyframes dot-moving {
   from {
     -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    transform: translateY(0%);
   }
+
   to {
     -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    transform: translateY(-100%);
   }
 }
+
 @-webkit-keyframes spinner-disparition {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
   }
 }
+
 @keyframes spinner-disparition {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
   }
 }
+
 @-webkit-keyframes container-opacity-during-spinner {
   from {
     opacity: 0.1;
   }
+
   to {
     opacity: 1;
   }
 }
+
 @keyframes container-opacity-during-spinner {
   from {
     opacity: 0.1;
   }
+
   to {
     opacity: 1;
   }
 }
+
 /* Pink heart appearring for favorite restaurant */
 @-webkit-keyframes pink-heart {
   0% {
     z-index: -1;
     opacity: 0;
   }
+
   100% {
     z-index: 1;
     opacity: 1;
   }
 }
+
 @keyframes pink-heart {
   0% {
     z-index: -1;
     opacity: 0;
   }
+
   100% {
     z-index: 1;
     opacity: 1;
   }
 }
+
 /* Menu appearance for restaurants pages */
 @-webkit-keyframes menu-appearance {
   0% {
     opacity: 0;
     -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    transform: translateY(0%);
   }
+
   100% {
     opacity: 1;
     /* Correction de l'intensité de la translation après soutenance */
     -webkit-transform: translateY(-15%);
-            transform: translateY(-15%);
+    transform: translateY(-15%);
   }
 }
+
 @keyframes menu-appearance {
   0% {
     opacity: 0;
     -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    transform: translateY(0%);
   }
+
   100% {
     opacity: 1;
     /* Correction de l'intensité de la translation après soutenance */
     -webkit-transform: translateY(-15%);
-            transform: translateY(-15%);
+    transform: translateY(-15%);
   }
 }
+
 /* Not asked : entry of title from left */
 @-webkit-keyframes title-entry {
   0% {
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
   }
+
   100% {
     -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: translateX(0%);
   }
 }
+
 @keyframes title-entry {
   0% {
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
   }
+
   100% {
     -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: translateX(0%);
   }
 }
+
 /* Font sizes */
 /* Borders */
 /* Spinner data */
 /* Boutton commun page d'accueil et pages restaurants */
-.home-header__explore-button, .restaurants-pages-button-order {
+.home-header__explore-button,
+.restaurants-pages-button-order {
   margin: 25px 0px 60px 0px;
   width: 58%;
   height: 50px;
@@ -198,22 +240,24 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   border: 1px solid #EAEAEA;
   border-radius: 30px;
   -webkit-box-shadow: 5px 5px 30px #EAEAEA;
-          box-shadow: 5px 5px 30px #EAEAEA;
+  box-shadow: 5px 5px 30px #EAEAEA;
   font-size: 15px;
   color: black;
   font-family: Roboto, "comic sans ms", sans-serif;
   font-weight: 200;
   color: white;
   cursor: pointer;
-  /* couleur du bouton : gradient de 4 couleures et non 2 pour le hover */ /* Chrome 10-25, Safari 5.1-6 */
+  /* couleur du bouton : gradient de 4 couleures et non 2 pour le hover */
+  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), color-stop(#9356dc), color-stop(#fface8), to(#ae80e5));
   background: -o-linear-gradient(top, #ff79da, #9356dc, #fface8, #ae80e5);
-  background: linear-gradient(180deg, #ff79da, #9356dc, #fface8, #ae80e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(180deg, #ff79da, #9356dc, #fface8, #ae80e5);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100% 300%;
 }
 
@@ -223,11 +267,11 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 15px;
   color: black;
   font-family: Roboto, "comic sans ms", sans-serif;
@@ -239,11 +283,12 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   background-color: #F7F7F7;
   border-radius: 25px;
   -webkit-box-shadow: 5px 5px 30px #EAEAEA;
-          box-shadow: 5px 5px 30px #EAEAEA;
+  box-shadow: 5px 5px 30px #EAEAEA;
   border: 1px solid #EAEAEA;
   padding-right: 50px;
   margin-bottom: 25px;
 }
+
 .home-nav__button-number {
   background-color: #9356DC;
   border-radius: 50%;
@@ -251,6 +296,7 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   padding: 5px 10px 5px 10px;
   margin-left: -15px;
 }
+
 .home-nav__button-icone {
   color: grey;
 }
@@ -264,15 +310,17 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   font-family: Roboto, "comic sans ms", sans-serif;
   font-weight: 200;
   -webkit-box-shadow: 5px 5px 30px #EAEAEA;
-          box-shadow: 5px 5px 30px #EAEAEA;
+  box-shadow: 5px 5px 30px #EAEAEA;
   background-color: white;
 }
+
 .restaurants-part-card__img {
   height: 176px;
   border-radius: 20px 20px 0px 0px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
+
 .restaurants-part-card__new {
   background-color: #99E2D0;
   display: inline-block;
@@ -283,17 +331,18 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   right: 45px;
   margin-top: 10px;
 }
+
 .restaurants-part-card__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 10px 25px 13px 15px;
   font-size: 15px;
   color: black;
@@ -301,6 +350,7 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   font-weight: 200;
   height: auto;
 }
+
 .restaurants-part-card__text h3 {
   font-weight: 600;
   padding-bottom: 8px;
@@ -313,11 +363,11 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 90%;
   min-height: 65px;
   height: auto;
@@ -326,15 +376,18 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   border-radius: 10px;
   background-color: white;
   -webkit-box-shadow: 5px 5px 30px #EAEAEA;
-          box-shadow: 5px 5px 30px #EAEAEA;
+  box-shadow: 5px 5px 30px #EAEAEA;
   white-space: nowrap;
 }
+
 .restaurants-pages-button label {
   display: none;
 }
+
 .restaurants-pages-button input {
   display: none;
 }
+
 .restaurants-pages-button__text {
   width: 100%;
   max-width: 80%;
@@ -347,27 +400,30 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
+
 .restaurants-pages-button__text :nth-child(1) {
   font-weight: 400;
   font-size: larger;
   -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
+  text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
+
 .restaurants-pages-button__text :nth-child(2) {
   -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
+  text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
-.restaurants-pages-button__text ~ p {
+
+.restaurants-pages-button__text~p {
   font-size: 15px;
   color: black;
   font-family: Roboto, "comic sans ms", sans-serif;
@@ -391,23 +447,27 @@ html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
   background-color: white;
   padding: 20px 0px 15px 10px;
 }
+
 .restaurants-pages-header__logo {
   width: 170px;
   height: auto;
 }
+
 .restaurants-pages-header p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
+
 .restaurants-pages-header a {
   position: absolute;
   top: 25px;
   left: 25px;
 }
+
 .restaurants-pages-header__picture {
   width: 100%;
   height: 250px;
@@ -421,10 +481,11 @@ footer {
   background-color: #353535;
   padding-bottom: 50px;
 }
+
 footer img {
   padding: 25px 0px 20px 20px;
   -webkit-filter: invert(1);
-          filter: invert(1);
+  filter: invert(1);
   width: 26%;
   min-width: 100px;
   max-width: 200px;
@@ -438,10 +499,12 @@ footer img {
   font-weight: 200;
   padding: 5px 0px 0px 20px;
 }
+
 .footer-part i {
   color: white;
   margin-right: 10px;
 }
+
 .footer-part a {
   color: white;
 }
@@ -460,9 +523,10 @@ footer img {
   border-right: 12px solid transparent;
   border-radius: 50%;
   -webkit-animation: spinner-rotation 2s cubic-bezier(0.4, 0.41, 0.94, 0.84) 150ms 3 both, spinner-disparition 200ms linear 3150ms both;
-          animation: spinner-rotation 2s cubic-bezier(0.4, 0.41, 0.94, 0.84) 150ms 3 both, spinner-disparition 200ms linear 3150ms both;
+  animation: spinner-rotation 2s cubic-bezier(0.4, 0.41, 0.94, 0.84) 150ms 3 both, spinner-disparition 200ms linear 3150ms both;
   opacity: 1;
 }
+
 .spinner__text {
   font-size: 25px;
   color: black;
@@ -479,43 +543,46 @@ footer img {
   text-align: left;
   opacity: 1;
   -webkit-animation: spinner-disparition 200ms linear 3150ms both;
-          animation: spinner-disparition 200ms linear 3150ms both;
+  animation: spinner-disparition 200ms linear 3150ms both;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
+
 .spinner__point--A {
   border: 6px solid #9356DC;
   border-radius: 50%;
   opacity: 1;
   -webkit-animation: dot-moving 300ms infinite alternate, spinner-disparition 200ms linear 3150ms both;
-          animation: dot-moving 300ms infinite alternate, spinner-disparition 200ms linear 3150ms both;
+  animation: dot-moving 300ms infinite alternate, spinner-disparition 200ms linear 3150ms both;
 }
+
 .spinner__point--B {
   border: 6px solid #9356DC;
   border-radius: 50%;
   opacity: 1;
   -webkit-animation: dot-moving 300ms 50ms infinite alternate, spinner-disparition 200ms linear 3150ms both;
-          animation: dot-moving 300ms 50ms infinite alternate, spinner-disparition 200ms linear 3150ms both;
+  animation: dot-moving 300ms 50ms infinite alternate, spinner-disparition 200ms linear 3150ms both;
 }
+
 .spinner__point--C {
   border: 6px solid #9356DC;
   border-radius: 50%;
   opacity: 1;
   -webkit-animation: dot-moving 300ms 100ms infinite alternate, spinner-disparition 200ms linear 3150ms both;
-          animation: dot-moving 300ms 100ms infinite alternate, spinner-disparition 200ms linear 3150ms both;
+  animation: dot-moving 300ms 100ms infinite alternate, spinner-disparition 200ms linear 3150ms both;
 }
 
 .container__home {
   opacity: 0.1;
   -webkit-animation: container-opacity-during-spinner 200ms linear 3150ms both;
-          animation: container-opacity-during-spinner 200ms linear 3150ms both;
+  animation: container-opacity-during-spinner 200ms linear 3150ms both;
 }
 
 /* Transition on hover over main buttons for home page */
@@ -526,9 +593,10 @@ footer img {
   transition: box-shadow 1500ms, background-color 1500ms;
   transition: box-shadow 1500ms, background-color 1500ms, -webkit-box-shadow 1500ms;
 }
+
 .home-nav__button:hover {
   -webkit-box-shadow: 5px 5px 30px #d1d1d1;
-          box-shadow: 5px 5px 30px #d1d1d1;
+  box-shadow: 5px 5px 30px #d1d1d1;
   background-color: #fafafa;
   -webkit-transition: background-color 500ms, -webkit-box-shadow 500ms;
   transition: background-color 500ms, -webkit-box-shadow 500ms;
@@ -544,9 +612,10 @@ footer img {
   transition: box-shadow 1500ms;
   transition: box-shadow 1500ms, -webkit-box-shadow 1500ms;
 }
+
 .restaurants-pages-button:hover {
   -webkit-box-shadow: 5px 5px 30px #d1d1d1;
-          box-shadow: 5px 5px 30px #d1d1d1;
+  box-shadow: 5px 5px 30px #d1d1d1;
   -webkit-transition: -webkit-box-shadow 500ms;
   transition: -webkit-box-shadow 500ms;
   -o-transition: box-shadow 500ms;
@@ -554,16 +623,19 @@ footer img {
   transition: box-shadow 500ms, -webkit-box-shadow 500ms;
 }
 
-.home-header__explore-button, .restaurants-pages-button-order {
+.home-header__explore-button,
+.restaurants-pages-button-order {
   -webkit-transition: background-position 10ms, -webkit-box-shadow 500ms;
   transition: background-position 10ms, -webkit-box-shadow 500ms;
   -o-transition: box-shadow 500ms, background-position 10ms;
   transition: box-shadow 500ms, background-position 10ms;
   transition: box-shadow 500ms, background-position 10ms, -webkit-box-shadow 500ms;
 }
-.home-header__explore-button:hover, .restaurants-pages-button-order:hover {
+
+.home-header__explore-button:hover,
+.restaurants-pages-button-order:hover {
   -webkit-box-shadow: 5px 5px 30px #d1d1d1;
-          box-shadow: 5px 5px 30px #d1d1d1;
+  box-shadow: 5px 5px 30px #d1d1d1;
   background-position: 0% 100%;
   -webkit-transition: background-position 10ms, -webkit-box-shadow 500ms;
   transition: background-position 10ms, -webkit-box-shadow 500ms;
@@ -577,7 +649,7 @@ j'ai créé un background plus grand avec 2 couleurs plus claires
 et j'ai fait varier la position du background verticalement.
 Problème: la durée de la transition doit etre très courte sinon on voit le background défiler*/
 /* Full Pink heart appearring */
-#heart2 {
+.heart2 {
   height: 25px;
   width: 25px;
   fill: transparent;
@@ -598,72 +670,84 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
   opacity: 1;
 }
 
-#heart :hover, #heart :active, #heart2 :hover, #heart2 :active {
+#heart :hover,
+#heart :active,
+.heart2 :hover,
+.heart2 :active {
   fill: #E453B4;
   stroke: #b51c82;
   -webkit-transition: fill 0.8s ease-out, stroke 0.6s 0.2s ease-out;
   -o-transition: fill 0.8s ease-out, stroke 0.6s 0.2s ease-out;
   transition: fill 0.8s ease-out, stroke 0.6s 0.2s ease-out;
   -webkit-transform-origin: top right;
-      -ms-transform-origin: top right;
-          transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
 }
 
 /* Menu appearance for restaurants pages */
 .restaurants-pages-button--starter {
   -webkit-animation: menu-appearance 1500ms both;
-          animation: menu-appearance 1500ms both;
+  animation: menu-appearance 1500ms both;
 }
+
 .restaurants-pages-button--dish {
   -webkit-animation: menu-appearance 1500ms 500ms both;
-          animation: menu-appearance 1500ms 500ms both;
+  animation: menu-appearance 1500ms 500ms both;
 }
+
 .restaurants-pages-button--dessert {
   -webkit-animation: menu-appearance 1500ms 1s both;
-          animation: menu-appearance 1500ms 1s both;
+  animation: menu-appearance 1500ms 1s both;
 }
 
 /* Not asked : entry of title from left */
 .restaurants-pages-menu__Title {
   -webkit-animation: title-entry ease-out 700ms both;
-          animation: title-entry ease-out 700ms both;
+  animation: title-entry ease-out 700ms both;
 }
 
 /* Dishes's selection */
 .restaurants-pages-button {
   -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
+  text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
+
 .restaurants-pages-button__checked {
   -webkit-transition: width 1s;
   -o-transition: width 1s;
-  transition: width 1s; /*Correction du check retour (sorti de la balise :hover) après soutenance*/
+  transition: width 1s;
+  /*Correction du check retour (sorti de la balise :hover) après soutenance*/
 }
+
 .restaurants-pages-button:hover .restaurants-pages-button__checked {
   margin-right: 0px;
   width: 20%;
 }
+
 .restaurants-pages-button:hover i {
   -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-          transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   -o-transition: transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
 }
+
 .restaurants-pages-button:hover .restaurants-pages-button__text {
   overflow: hidden;
 }
-.restaurants-pages-button:hover .restaurants-pages-button__text ~ p {
+
+.restaurants-pages-button:hover .restaurants-pages-button__text~p {
   background-color: white;
   /* Correction de l'ellipsis après soutenance (translation -> width)*/
   width: 20%;
   margin-right: 20%;
 }
+
 .restaurants-pages-button .restaurants-pages-button__checked {
   color: white;
   background-color: #99E2D0;
@@ -671,11 +755,11 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 0%;
   height: 100%;
   position: absolute;
@@ -692,15 +776,16 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   background-color: #F7F7F7;
 }
+
 .home-header p {
   width: 100%;
   background-color: white;
@@ -708,9 +793,10 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
+
 .home-header__logo {
   width: 26%;
   min-width: 180px;
@@ -719,22 +805,24 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
   padding-top: 20px;
   padding-bottom: 10px;
 }
+
 .home-header__search-bar {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   height: 50px;
   background-color: #EAEAEA;
 }
+
 .home-header__search-bar input {
   border: none;
   font-size: 15px;
@@ -746,17 +834,19 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
   width: 50%;
   background-color: #EAEAEA;
 }
+
 .home-header__search-bar form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
+
 .home-header__title {
   text-align: center;
   font-size: 25px;
@@ -765,6 +855,7 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
   font-weight: 500;
   padding: 40px 50px 5px 40px;
 }
+
 .home-header__subtitle {
   text-align: center;
   font-size: 20px;
@@ -777,6 +868,7 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
 .home-nav {
   background-color: white;
 }
+
 .home-nav__Title {
   font-size: 25px;
   color: black;
@@ -784,17 +876,18 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
   font-weight: 500;
   padding: 45px 0px 30px 15px;
 }
+
 .home-nav__Buttons-part {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding-bottom: 45px;
 }
 
@@ -806,6 +899,7 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
   font-family: Roboto, "comic sans ms", sans-serif;
   font-weight: 500;
 }
+
 .restaurants-part__card-section {
   width: 100%;
   display: -webkit-box;
@@ -813,14 +907,15 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   row-gap: 14px;
   padding-bottom: 75px;
 }
+
 .restaurants-part__Title {
   font-size: 25px;
   color: black;
@@ -839,11 +934,11 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   background-color: #F7F7F7;
   font-size: 20px;
   color: black;
@@ -854,9 +949,10 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
   position: absolute;
   top: 280px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
 }
+
 .restaurants-pages-nav h1 {
   position: relative;
   top: 40px;
@@ -868,6 +964,7 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
 .restaurants-pages-menu {
   background-color: #F7F7F7;
 }
+
 .restaurants-pages-menu__Title {
   font-size: 15px;
   color: black;
@@ -876,24 +973,28 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
   padding: 70px 0px 10px 12px;
   width: 20%;
   -ms-flex-item-align: baseline;
-      align-self: baseline;
+  align-self: baseline;
 }
+
 .restaurants-pages-menu__Title span {
   padding-bottom: 4px;
   border-bottom: 4px solid #99E2D0;
 }
+
 .restaurants-pages-menu__Title2 {
   padding-top: 40px;
 }
-.restaurants-pages-menu + div {
+
+.restaurants-pages-menu+div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: #F7F7F7;
 }
+
 .restaurants-pages-menu__buttons-part {
   width: auto;
   padding: 20px 0px 0px 12px;
@@ -902,11 +1003,11 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   row-gap: 17px;
 }
 
@@ -919,6 +1020,7 @@ le h1 empiète sur le restaurants-pages-menu__Title */
     padding-top: 100px;
   }
 }
+
 /* Media queries Page d'accueil */
 /** Version tablette **/
 @media only screen and (min-width: 780px) {
@@ -929,24 +1031,28 @@ le h1 empiète sur le restaurants-pages-menu__Title */
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     padding: 0;
   }
+
   .home-nav__button {
     padding-right: 10px;
     width: 25%;
     min-width: 200px;
   }
+
   .restaurants-part-card {
     width: 40%;
     height: 280px;
   }
+
   .restaurants-part-card__text {
     margin-top: -20px;
   }
+
   .restaurants-part-card__new {
     position: relative;
     width: 50px;
@@ -954,152 +1060,178 @@ le h1 empiète sur le restaurants-pages-menu__Title */
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     top: -65%;
     right: -73%;
   }
+
   .restaurants-part__card-section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     row-gap: 80px;
   }
+
   footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
+
 /** Version Web **/
 @media only screen and (min-width: 992px) {
-  .home-header__explore-button, .restaurants-pages-button-order {
+
+  .home-header__explore-button,
+  .restaurants-pages-button-order {
     width: 40%;
   }
+
   .home-nav__Buttons-part {
     width: 80%;
     margin-left: 50px;
     gap: 20px;
   }
+
   .home-nav__button {
     padding-right: 50px;
     max-width: 280px;
   }
+
   .restaurants-part-card {
     width: 22%;
   }
+
   .restaurants-part-card__new {
     right: -62%;
   }
 }
+
 @media only screen and (min-width: 1540px) {
+
   /* Ajout necessaire d'une taille intermédiaire pour positionner correctement le new*/
   .restaurants-part-card__new {
     right: -75%;
   }
 }
+
 /* Media queries Pages restaurants */
 /** Version tablette **/
 @media only screen and (min-width: 780px) {
   .restaurants-pages-header__picture {
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     height: 350px;
   }
+
   .restaurants-pages-nav {
     top: 370px;
     height: 150px;
   }
+
   #heart {
     scale: 1.5;
   }
+
   .restaurants-pages-menu {
     padding-top: 70px;
   }
+
   .restaurants-pages-menu__Title {
     padding-left: 50px;
   }
+
   .restaurants-pages-menu__buttons-part {
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     padding-left: 40px;
   }
+
   .restaurants-pages-button {
     padding-left: 30px;
     width: 80%;
   }
-  .restaurants-pages-button__text ~ p {
+
+  .restaurants-pages-button__text~p {
     padding-top: 30px;
     padding-right: 30px;
   }
 }
+
 /** Version Web **/
 @media only screen and (min-width: 992px) {
   .restaurants-pages-header__picture {
     height: 450px;
   }
+
   .restaurants-pages-nav {
     top: 450px;
   }
+
   .restaurants-pages-button {
     width: 28%;
     height: 80px;
     padding: 10px 0px 10px 10px;
   }
+
   .restaurants-pages-button__text {
     margin-right: 10px;
   }
-  .restaurants-pages-button__text ~ p {
+
+  .restaurants-pages-button__text~p {
     padding-top: 50px;
     padding-right: 25px;
   }
+
   .restaurants-pages-button-part {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     gap: 17px;
     padding-left: 20px;
     padding-right: 20px;
   }
+
   .restaurants-pages-menu__buttons-part {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     gap: 17px;
     padding-left: 20px;
     padding-right: 20px;
