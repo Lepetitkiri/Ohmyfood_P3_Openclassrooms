@@ -12,8 +12,9 @@
     border-top: 12px solid $color-primary;
     border-right: 12px solid transparent;
     border-radius: 50%;
-    animation: spinner-rotation $spinner-duration cubic-bezier(0.4,0.41,0.94,0.84) $spinner-delay 3 both, spinner-disparition $spinner-disparition-duration linear $spinner-disparition-delay both;
+    animation: spinner-rotation $spinner-duration cubic-bezier(0.4, 0.41, 0.94, 0.84) $spinner-delay 3 both, spinner-disparition $spinner-disparition-duration linear $spinner-disparition-delay both;
     opacity: $spinner-opacity;
+
     &__text {
         @include Text-l;
         height: auto;
@@ -31,17 +32,20 @@
         align-items: flex-end;
         justify-content: space-between;
     }
+
     &__point {
         &--A {
             @include Border-spinner__text--A;
             opacity: $spinner-opacity;
             animation: dot-moving $dot-duration infinite alternate, spinner-disparition $spinner-disparition-duration linear $spinner-disparition-delay both;
         }
+
         &--B {
             @include Border-spinner__text--A;
             opacity: $spinner-opacity;
             animation: dot-moving $dot-duration 50ms infinite alternate, spinner-disparition $spinner-disparition-duration linear $spinner-disparition-delay both;
         }
+
         &--C {
             @include Border-spinner__text--A;
             opacity: $spinner-opacity;
@@ -59,29 +63,34 @@
 
 .home-nav__button {
     transition: box-shadow 1500ms, background-color 1500ms;
+
     &:hover {
         @include Border-shadow-strong;
         background-color: lighten($color: $grey-light, $amount: 1);
         transition: box-shadow 500ms, background-color 500ms;
-        }
+    }
 }
 
 .restaurants-pages-button {
     transition: box-shadow 1500ms;
+
     &:hover {
         @include Border-shadow-strong;
         transition: box-shadow 500ms;
     }
 }
 
-.home-header__explore-button, .restaurants-pages-button-order {
+.home-header__explore-button,
+.restaurants-pages-button-order {
     transition: box-shadow 500ms, background-position 10ms;
+
     &:hover {
         @include Border-shadow-strong;
         background-position: 0% 100%;
         transition: box-shadow 500ms, background-position 10ms;
     }
 }
+
 /* NB: Il n'est pas possible d'animer la propriété "Background" alors 
 j'ai créé un background plus grand avec 2 couleurs plus claires
 et j'ai fait varier la position du background verticalement.
@@ -90,7 +99,10 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
 
 /* Full Pink heart appearring */
 
-#heart2 /*home page*/ {
+.heart2
+
+/*home page*/
+    {
     height: 25px;
     width: 25px;
     fill: transparent;
@@ -99,19 +111,25 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
     position: relative;
 }
 
-#heart /*restaurants page*/ {
-        height: 30px;
-        width: 30px;
-        fill: transparent;
-        stroke: black;
-        stroke-width: 2;
-        position: relative;
-        padding-top: 40px;
-        margin-right: 10%;
-        opacity: 1;
+#heart
+
+/*restaurants page*/
+    {
+    height: 30px;
+    width: 30px;
+    fill: transparent;
+    stroke: black;
+    stroke-width: 2;
+    position: relative;
+    padding-top: 40px;
+    margin-right: 10%;
+    opacity: 1;
 }
 
-#heart :hover, #heart :active, #heart2 :hover, #heart2 :active{
+#heart :hover,
+#heart :active,
+.heart2 :hover,
+.heart2 :active {
     fill: #E453B4;
     stroke: darken($color: #E453B4, $amount: 20);
     transition: fill 0.8s ease-out, stroke 0.6s 0.2s ease-out;
@@ -120,46 +138,57 @@ Problème: la durée de la transition doit etre très courte sinon on voit le ba
 
 
 
-    /* Menu appearance for restaurants pages */
+/* Menu appearance for restaurants pages */
 
-    .restaurants-pages-button {
-        &--starter {
-            animation: menu-appearance 1500ms both;
-        }
-        &--dish {
-            animation: menu-appearance 1500ms 500ms both;
-        }
-        &--dessert {
-            animation: menu-appearance 1500ms 1s both;
-        }
-    }
-                /* Not asked : entry of title from left */
-    .restaurants-pages-menu {
-        &__Title {animation: title-entry ease-out 700ms both; }
+.restaurants-pages-button {
+    &--starter {
+        animation: menu-appearance 1500ms both;
     }
 
+    &--dish {
+        animation: menu-appearance 1500ms 500ms both;
+    }
 
-    /* Dishes's selection */ 
+    &--dessert {
+        animation: menu-appearance 1500ms 1s both;
+    }
+}
+
+/* Not asked : entry of title from left */
+.restaurants-pages-menu {
+    &__Title {
+        animation: title-entry ease-out 700ms both;
+    }
+}
+
+
+/* Dishes's selection */
 
 .restaurants-pages-button {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+
     &__checked {
-        transition: width 1s; /*Correction du check retour (sorti de la balise :hover) après soutenance*/
+        transition: width 1s;
+        /*Correction du check retour (sorti de la balise :hover) après soutenance*/
     }
+
     &:hover .restaurants-pages-button__checked {
         margin-right: 0px;
         width: 20%;
 
-    } 
+    }
+
     &:hover i {
         transform: rotate(360deg);
         transition: transform 1s;
     }
+
     &:hover &__text {
         overflow: hidden;
-        ~ p {
+
+        ~p {
             background-color: white;
             /* Correction de l'ellipsis après soutenance (translation -> width)*/
             width: 20%;
