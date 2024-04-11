@@ -1,14 +1,70 @@
-# Présentation du projet
+# Ohmyfood_P3_Openclassrooms
 
-Projet réalisé en 2023 dans le cadre de ma formation Openclassrooms.
+## Présentation du projet
 
-Axes de travail :
+Projet réalisé en 2023.
 
-- Création d'un site (web, tablette, mobile) à partir d'une unique maquette mobile. 
-- Creation d'animations CSS / Sass
-- Prise en main de github.
+Formation Openclassrooms Developpeur web - Projet P3 (Ohmyfood).
+Objectif : Création d'un site de réservation de menu en ligne à partir d'une unique maquette mobile. Mise en place d'animations CSS / SASS.
 
-Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la restauration. L'objectif est de développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques. En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée. Finis, les temps d'attente au restaurant !
+
+## Table des matières
+
+* Installation
+* Utilisation
+* Technologies utilisées
+* Déploiement
+* Crédits
+
+
+## Installation
+
+Pour installer et exécuter le projet localement, suivez les étapes : 
+
+1. Clonez le dépot Git : 
+```
+Git clone https://github.com/Lepetitkiri/Ohmyfood_P3_Openclassrooms.git
+```
+
+2. Accéder au répertoire :
+```
+cd /OC_P3_Ohmyfood_Regnault_Domitille
+```
+
+3. A la racine du projet, ouvrez le fichier `index.html` à l'aide du clic droit puis `Open with Live Server` 
+
+
+*Si le projet ne s'ouvre pas :*
+* Vérifiez la compatibilité avec votre navigateur web.
+
+
+## Utilisation
+Une fois le site ouvert, vous pouvez naviguer à travers les différentes page du site :
+* Accueil
+* Page restaurant spécifique au restaurant sélectionné
+
+
+## Technologies utilisées
+
+Le projet a été créé via HTML et SASS / CSS.
+
+
+## Déploiement
+
+Le site est déployé sur Github Pages et est accéssible à l'adresse suivante : [https://lepetitkiri.github.io/Ohmyfood_P3_Openclassrooms/]
+
+## Credits
+
+Ce projet a été développé par Domitille REGNAULT en 2023 à l'aide de :
+* https://openclassrooms.com/fr/
+
+
+
+
+
+
+
+
 
 Le projet comporte 5 pages :
 - Home permettant de sélectionner un restaurant.
