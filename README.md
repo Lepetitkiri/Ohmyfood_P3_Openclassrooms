@@ -7,6 +7,10 @@ Projet réalisé en 2023.
 Formation Openclassrooms Developpeur web - Projet P3 (Ohmyfood).
 Objectif : Création d'un site de réservation de menu en ligne à partir d'une unique maquette mobile. Mise en place d'animations CSS / SASS.
 
+## Visuel attendu lors de l'exercice
+
+![image](https://user-images.githubusercontent.com/121162994/224929954-cc0797e9-ddde-4140-b7ed-3103de9930e9.png)
+
 
 ## Table des matières
 
@@ -57,23 +61,3 @@ Le site est déployé sur Github Pages et est accéssible à l'adresse suivante 
 
 Ce projet a été développé par Domitille REGNAULT en 2023 à l'aide de :
 * https://openclassrooms.com/fr/
-
-
-
-
-
-
-
-
-
-Le projet comporte 5 pages :
-- Home permettant de sélectionner un restaurant.
-- 4 Pages spécifiques à chaque restaurant permettant de réserver son menu.
-
-# Visuel attendu lors de l'exercice 
-
-![image](https://user-images.githubusercontent.com/121162994/224929954-cc0797e9-ddde-4140-b7ed-3103de9930e9.png)
-
-# Démarrage du Frontend
-
-Le projet étant codé en HTML simple, il suffit d'ouvrir le fichier `index.html` dans un navigateur web.
